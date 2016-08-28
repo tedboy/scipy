@@ -1,0 +1,6 @@
+scipy.linalg.lapack.slasd4
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: slasd4

@@ -1,0 +1,6 @@
+scipy.linalg.blas.zscal
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: zscal

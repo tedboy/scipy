@@ -1,0 +1,6 @@
+scipy.signal.buttap
+===================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: buttap

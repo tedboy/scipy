@@ -1,0 +1,6 @@
+scipy.ndimage.extrema
+=====================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: extrema

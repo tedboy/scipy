@@ -1,0 +1,23 @@
+scipy.odr.RealData
+==================
+
+.. currentmodule:: scipy.odr
+
+.. autoclass:: RealData
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~RealData.__init__
+      ~RealData.set_meta
+   
+   
+
+   
+   
+   

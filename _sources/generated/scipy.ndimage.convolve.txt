@@ -1,0 +1,6 @@
+scipy.ndimage.convolve
+======================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: convolve

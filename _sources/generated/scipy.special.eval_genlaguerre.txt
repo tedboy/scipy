@@ -1,0 +1,6 @@
+scipy.special.eval_genlaguerre
+==============================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: eval_genlaguerre

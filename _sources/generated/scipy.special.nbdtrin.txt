@@ -1,0 +1,6 @@
+scipy.special.nbdtrin
+=====================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: nbdtrin

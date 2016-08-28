@@ -1,0 +1,6 @@
+scipy.stats.mstats.meppf
+========================
+
+.. currentmodule:: scipy.stats.mstats
+
+.. autofunction:: meppf

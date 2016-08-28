@@ -1,0 +1,6 @@
+scipy.linalg.lapack.zgeev
+=========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: zgeev

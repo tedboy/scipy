@@ -1,0 +1,6 @@
+scipy.special.j_roots
+=====================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: j_roots

@@ -1,0 +1,6 @@
+scipy.special.eval_chebys
+=========================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: eval_chebys

@@ -1,0 +1,6 @@
+scipy.linalg.lapack.dgetri_lwork
+================================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: dgetri_lwork

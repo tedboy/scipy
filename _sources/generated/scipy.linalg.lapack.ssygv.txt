@@ -1,0 +1,6 @@
+scipy.linalg.lapack.ssygv
+=========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: ssygv

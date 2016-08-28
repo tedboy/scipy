@@ -1,0 +1,6 @@
+scipy.linalg.pinvh
+==================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: pinvh

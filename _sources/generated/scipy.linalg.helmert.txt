@@ -1,0 +1,6 @@
+scipy.linalg.helmert
+====================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: helmert

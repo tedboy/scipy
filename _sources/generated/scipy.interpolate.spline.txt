@@ -1,0 +1,6 @@
+scipy.interpolate.spline
+========================
+
+.. currentmodule:: scipy.interpolate
+
+.. autofunction:: spline

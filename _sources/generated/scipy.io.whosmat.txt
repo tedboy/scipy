@@ -1,0 +1,6 @@
+scipy.io.whosmat
+================
+
+.. currentmodule:: scipy.io
+
+.. autofunction:: whosmat

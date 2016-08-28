@@ -1,0 +1,6 @@
+scipy.optimize.lsq_linear
+=========================
+
+.. currentmodule:: scipy.optimize
+
+.. autofunction:: lsq_linear

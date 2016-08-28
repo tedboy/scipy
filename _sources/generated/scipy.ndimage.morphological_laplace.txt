@@ -1,0 +1,6 @@
+scipy.ndimage.morphological_laplace
+===================================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: morphological_laplace

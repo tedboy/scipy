@@ -1,0 +1,6 @@
+scipy.ndimage.find_objects
+==========================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: find_objects

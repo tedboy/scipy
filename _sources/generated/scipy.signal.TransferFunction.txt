@@ -1,0 +1,44 @@
+scipy.signal.TransferFunction
+=============================
+
+.. currentmodule:: scipy.signal
+
+.. autoclass:: TransferFunction
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~TransferFunction.__init__
+      ~TransferFunction.bode
+      ~TransferFunction.freqresp
+      ~TransferFunction.impulse
+      ~TransferFunction.output
+      ~TransferFunction.step
+      ~TransferFunction.to_ss
+      ~TransferFunction.to_tf
+      ~TransferFunction.to_zpk
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~TransferFunction.A
+      ~TransferFunction.B
+      ~TransferFunction.C
+      ~TransferFunction.D
+      ~TransferFunction.den
+      ~TransferFunction.gain
+      ~TransferFunction.num
+      ~TransferFunction.poles
+      ~TransferFunction.zeros
+   
+   

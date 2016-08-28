@@ -1,0 +1,6 @@
+scipy.linalg.lapack.sposv
+=========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: sposv

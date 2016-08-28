@@ -1,0 +1,6 @@
+scipy.optimize.approx_fprime
+============================
+
+.. currentmodule:: scipy.optimize
+
+.. autofunction:: approx_fprime

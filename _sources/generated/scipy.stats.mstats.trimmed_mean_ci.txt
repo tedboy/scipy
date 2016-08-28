@@ -1,0 +1,6 @@
+scipy.stats.mstats.trimmed_mean_ci
+==================================
+
+.. currentmodule:: scipy.stats.mstats
+
+.. autofunction:: trimmed_mean_ci

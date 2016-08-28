@@ -1,0 +1,6 @@
+scipy.signal.BadCoefficients
+============================
+
+.. currentmodule:: scipy.signal
+
+.. autoexception:: BadCoefficients

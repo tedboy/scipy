@@ -1,0 +1,6 @@
+scipy.special.assoc_laguerre
+============================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: assoc_laguerre

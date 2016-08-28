@@ -1,0 +1,6 @@
+scipy.special.nctdtrit
+======================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: nctdtrit

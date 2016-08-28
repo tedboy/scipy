@@ -1,0 +1,6 @@
+scipy.linalg.invpascal
+======================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: invpascal

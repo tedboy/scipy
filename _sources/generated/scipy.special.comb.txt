@@ -1,0 +1,6 @@
+scipy.special.comb
+==================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: comb

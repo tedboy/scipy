@@ -1,0 +1,6 @@
+scipy.ndimage.fourier_shift
+===========================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: fourier_shift

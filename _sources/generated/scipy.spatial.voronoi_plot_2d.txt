@@ -1,0 +1,6 @@
+scipy.spatial.voronoi_plot_2d
+=============================
+
+.. currentmodule:: scipy.spatial
+
+.. autofunction:: voronoi_plot_2d

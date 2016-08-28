@@ -1,0 +1,6 @@
+scipy.linalg.lapack.zgehrd
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: zgehrd

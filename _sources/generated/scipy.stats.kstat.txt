@@ -1,0 +1,6 @@
+scipy.stats.kstat
+=================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: kstat

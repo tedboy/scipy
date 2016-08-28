@@ -1,0 +1,6 @@
+scipy.stats.find_repeats
+========================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: find_repeats

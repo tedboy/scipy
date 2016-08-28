@@ -1,0 +1,6 @@
+scipy.special.pseudo_huber
+==========================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: pseudo_huber

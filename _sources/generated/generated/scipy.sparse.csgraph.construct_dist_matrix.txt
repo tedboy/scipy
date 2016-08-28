@@ -1,0 +1,6 @@
+scipy.sparse.csgraph.construct_dist_matrix
+==========================================
+
+.. currentmodule:: scipy.sparse.csgraph
+
+.. autofunction:: construct_dist_matrix

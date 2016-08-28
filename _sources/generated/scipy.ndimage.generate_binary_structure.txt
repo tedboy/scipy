@@ -1,0 +1,6 @@
+scipy.ndimage.generate_binary_structure
+=======================================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: generate_binary_structure

@@ -1,0 +1,6 @@
+scipy.ndimage.binary_hit_or_miss
+================================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: binary_hit_or_miss

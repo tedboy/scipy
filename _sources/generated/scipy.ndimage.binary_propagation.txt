@@ -1,0 +1,6 @@
+scipy.ndimage.binary_propagation
+================================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: binary_propagation

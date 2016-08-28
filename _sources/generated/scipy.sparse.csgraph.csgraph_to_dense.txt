@@ -1,0 +1,6 @@
+scipy.sparse.csgraph.csgraph_to_dense
+=====================================
+
+.. currentmodule:: scipy.sparse.csgraph
+
+.. autofunction:: csgraph_to_dense

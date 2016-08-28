@@ -1,0 +1,6 @@
+scipy.stats.square_of_sums
+==========================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: square_of_sums

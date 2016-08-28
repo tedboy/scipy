@@ -1,0 +1,6 @@
+scipy.special.nrdtrisd
+======================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: nrdtrisd

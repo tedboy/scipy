@@ -1,0 +1,6 @@
+scipy.linalg.blas.cgeru
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: cgeru

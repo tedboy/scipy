@@ -1,0 +1,6 @@
+scipy.linalg.lapack.ssyevd
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: ssyevd

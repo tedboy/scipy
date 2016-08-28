@@ -1,0 +1,6 @@
+scipy.misc.face
+===============
+
+.. currentmodule:: scipy.misc
+
+.. autofunction:: face

@@ -1,0 +1,6 @@
+scipy.sparse.linalg.use_solver
+==============================
+
+.. currentmodule:: scipy.sparse.linalg
+
+.. autofunction:: use_solver

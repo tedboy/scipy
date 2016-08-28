@@ -1,0 +1,6 @@
+scipy.linalg.lapack.clarf
+=========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: clarf

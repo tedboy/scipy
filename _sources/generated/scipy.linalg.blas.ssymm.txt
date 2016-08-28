@@ -1,0 +1,6 @@
+scipy.linalg.blas.ssymm
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: ssymm

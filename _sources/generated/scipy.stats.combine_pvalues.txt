@@ -1,0 +1,6 @@
+scipy.stats.combine_pvalues
+===========================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: combine_pvalues

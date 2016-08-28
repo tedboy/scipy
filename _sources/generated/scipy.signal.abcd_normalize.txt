@@ -1,0 +1,6 @@
+scipy.signal.abcd_normalize
+===========================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: abcd_normalize

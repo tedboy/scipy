@@ -1,0 +1,6 @@
+scipy.linalg.solve_toeplitz
+===========================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: solve_toeplitz

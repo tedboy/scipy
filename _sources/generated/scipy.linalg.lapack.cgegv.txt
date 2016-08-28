@@ -1,0 +1,6 @@
+scipy.linalg.lapack.cgegv
+=========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autofunction:: cgegv

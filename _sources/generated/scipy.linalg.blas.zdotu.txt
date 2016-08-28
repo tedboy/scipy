@@ -1,0 +1,6 @@
+scipy.linalg.blas.zdotu
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: zdotu

@@ -1,0 +1,6 @@
+scipy.special.inv_boxcox
+========================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: inv_boxcox

@@ -1,0 +1,6 @@
+scipy.linalg.blas.chemv
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: chemv

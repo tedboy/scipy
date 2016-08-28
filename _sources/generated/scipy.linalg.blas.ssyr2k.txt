@@ -1,0 +1,6 @@
+scipy.linalg.blas.ssyr2k
+========================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: ssyr2k

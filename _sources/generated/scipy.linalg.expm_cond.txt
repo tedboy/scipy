@@ -1,0 +1,6 @@
+scipy.linalg.expm_cond
+======================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: expm_cond

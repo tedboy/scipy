@@ -1,0 +1,6 @@
+scipy.stats.betai
+=================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: betai

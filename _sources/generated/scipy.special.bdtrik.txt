@@ -1,0 +1,6 @@
+scipy.special.bdtrik
+====================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: bdtrik

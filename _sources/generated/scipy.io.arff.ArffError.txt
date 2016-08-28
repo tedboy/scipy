@@ -1,0 +1,6 @@
+scipy.io.arff.ArffError
+=======================
+
+.. currentmodule:: scipy.io.arff
+
+.. autoexception:: ArffError

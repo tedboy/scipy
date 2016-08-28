@@ -1,0 +1,6 @@
+scipy.spatial.convex_hull_plot_2d
+=================================
+
+.. currentmodule:: scipy.spatial
+
+.. autofunction:: convex_hull_plot_2d

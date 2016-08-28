@@ -1,0 +1,6 @@
+scipy.ndimage.gaussian_gradient_magnitude
+=========================================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: gaussian_gradient_magnitude

@@ -1,0 +1,6 @@
+scipy.linalg.interpolative.seed
+===============================
+
+.. currentmodule:: scipy.linalg.interpolative
+
+.. autofunction:: seed

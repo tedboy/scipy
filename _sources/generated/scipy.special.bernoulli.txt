@@ -1,0 +1,6 @@
+scipy.special.bernoulli
+=======================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: bernoulli

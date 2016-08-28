@@ -1,0 +1,6 @@
+scipy.linalg.lapack.cgelsy
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: cgelsy

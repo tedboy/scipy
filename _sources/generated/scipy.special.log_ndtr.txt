@@ -1,0 +1,6 @@
+scipy.special.log_ndtr
+======================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: log_ndtr

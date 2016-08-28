@@ -1,0 +1,6 @@
+scipy.linalg.lapack.cheev
+=========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: cheev

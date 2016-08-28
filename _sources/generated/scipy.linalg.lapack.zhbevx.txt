@@ -1,0 +1,6 @@
+scipy.linalg.lapack.zhbevx
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: zhbevx

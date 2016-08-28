@@ -1,0 +1,6 @@
+scipy.special.ps_roots
+======================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: ps_roots

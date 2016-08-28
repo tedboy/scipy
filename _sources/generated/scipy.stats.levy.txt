@@ -1,0 +1,6 @@
+scipy.stats.levy
+================
+
+.. currentmodule:: scipy.stats
+
+.. autodata:: levy

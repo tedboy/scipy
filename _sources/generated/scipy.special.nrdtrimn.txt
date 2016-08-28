@@ -1,0 +1,6 @@
+scipy.special.nrdtrimn
+======================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: nrdtrimn

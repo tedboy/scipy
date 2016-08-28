@@ -1,0 +1,6 @@
+scipy.special.clpmn
+===================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: clpmn

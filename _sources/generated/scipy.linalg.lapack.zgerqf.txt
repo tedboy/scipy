@@ -1,0 +1,6 @@
+scipy.linalg.lapack.zgerqf
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: zgerqf

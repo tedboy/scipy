@@ -1,0 +1,6 @@
+scipy.stats.mstats.compare_medians_ms
+=====================================
+
+.. currentmodule:: scipy.stats.mstats
+
+.. autofunction:: compare_medians_ms

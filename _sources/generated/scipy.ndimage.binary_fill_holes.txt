@@ -1,0 +1,6 @@
+scipy.ndimage.binary_fill_holes
+===============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: binary_fill_holes

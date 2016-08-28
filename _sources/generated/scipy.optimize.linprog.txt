@@ -1,0 +1,6 @@
+scipy.optimize.linprog
+======================
+
+.. currentmodule:: scipy.optimize
+
+.. autofunction:: linprog

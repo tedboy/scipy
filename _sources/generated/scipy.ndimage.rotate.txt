@@ -1,0 +1,6 @@
+scipy.ndimage.rotate
+====================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: rotate

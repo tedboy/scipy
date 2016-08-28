@@ -1,0 +1,6 @@
+scipy.fftpack.idst
+==================
+
+.. currentmodule:: scipy.fftpack
+
+.. autofunction:: idst

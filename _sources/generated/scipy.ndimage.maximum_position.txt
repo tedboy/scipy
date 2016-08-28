@@ -1,0 +1,6 @@
+scipy.ndimage.maximum_position
+==============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: maximum_position

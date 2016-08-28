@@ -1,0 +1,6 @@
+scipy.ndimage.labeled_comprehension
+===================================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: labeled_comprehension

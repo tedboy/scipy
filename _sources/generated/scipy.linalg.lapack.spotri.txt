@@ -1,0 +1,6 @@
+scipy.linalg.lapack.spotri
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: spotri

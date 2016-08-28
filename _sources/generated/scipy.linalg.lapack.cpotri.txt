@@ -1,0 +1,6 @@
+scipy.linalg.lapack.cpotri
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: cpotri

@@ -1,0 +1,6 @@
+scipy.linalg.interpolative.interp_decomp
+========================================
+
+.. currentmodule:: scipy.linalg.interpolative
+
+.. autofunction:: interp_decomp

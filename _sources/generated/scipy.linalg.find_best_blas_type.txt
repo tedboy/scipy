@@ -1,0 +1,6 @@
+scipy.linalg.find_best_blas_type
+================================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: find_best_blas_type

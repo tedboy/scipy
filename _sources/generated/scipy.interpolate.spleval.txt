@@ -1,0 +1,6 @@
+scipy.interpolate.spleval
+=========================
+
+.. currentmodule:: scipy.interpolate
+
+.. autofunction:: spleval

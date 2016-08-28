@@ -1,0 +1,6 @@
+scipy.special.gammasgn
+======================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: gammasgn

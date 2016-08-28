@@ -1,0 +1,6 @@
+scipy.signal.spectrogram
+========================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: spectrogram

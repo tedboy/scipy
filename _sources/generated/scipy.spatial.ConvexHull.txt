@@ -1,0 +1,30 @@
+scipy.spatial.ConvexHull
+========================
+
+.. currentmodule:: scipy.spatial
+
+.. autoclass:: ConvexHull
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ConvexHull.__init__
+      ~ConvexHull.add_points
+      ~ConvexHull.close
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ConvexHull.vertices
+   
+   

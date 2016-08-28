@@ -1,0 +1,6 @@
+scipy.stats.halfgennorm
+=======================
+
+.. currentmodule:: scipy.stats
+
+.. autodata:: halfgennorm

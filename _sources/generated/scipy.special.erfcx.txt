@@ -1,0 +1,6 @@
+scipy.special.erfcx
+===================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: erfcx

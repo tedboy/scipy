@@ -1,0 +1,6 @@
+scipy.sparse.csgraph.maximum_bipartite_matching
+===============================================
+
+.. currentmodule:: scipy.sparse.csgraph
+
+.. autofunction:: maximum_bipartite_matching

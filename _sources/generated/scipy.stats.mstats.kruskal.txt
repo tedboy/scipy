@@ -1,0 +1,6 @@
+scipy.stats.mstats.kruskal
+==========================
+
+.. currentmodule:: scipy.stats.mstats
+
+.. autofunction:: kruskal

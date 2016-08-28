@@ -1,0 +1,6 @@
+scipy.sparse.linalg.onenormest
+==============================
+
+.. currentmodule:: scipy.sparse.linalg
+
+.. autofunction:: onenormest

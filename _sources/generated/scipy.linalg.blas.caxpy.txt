@@ -1,0 +1,6 @@
+scipy.linalg.blas.caxpy
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: caxpy

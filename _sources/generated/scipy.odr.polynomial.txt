@@ -1,0 +1,6 @@
+scipy.odr.polynomial
+====================
+
+.. currentmodule:: scipy.odr
+
+.. autofunction:: polynomial

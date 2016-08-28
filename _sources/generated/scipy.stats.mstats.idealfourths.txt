@@ -1,0 +1,6 @@
+scipy.stats.mstats.idealfourths
+===============================
+
+.. currentmodule:: scipy.stats.mstats
+
+.. autofunction:: idealfourths

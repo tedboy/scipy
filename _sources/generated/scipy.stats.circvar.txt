@@ -1,0 +1,6 @@
+scipy.stats.circvar
+===================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: circvar

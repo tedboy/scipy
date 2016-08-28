@@ -1,0 +1,6 @@
+scipy.sparse.csgraph.reconstruct_path
+=====================================
+
+.. currentmodule:: scipy.sparse.csgraph
+
+.. autofunction:: reconstruct_path

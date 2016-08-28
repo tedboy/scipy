@@ -1,0 +1,6 @@
+scipy.stats.mstats.ttest_1samp
+==============================
+
+.. currentmodule:: scipy.stats.mstats
+
+.. autofunction:: ttest_1samp

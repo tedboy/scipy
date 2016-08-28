@@ -1,0 +1,6 @@
+scipy.sparse.csgraph.reverse_cuthill_mckee
+==========================================
+
+.. currentmodule:: scipy.sparse.csgraph
+
+.. autofunction:: reverse_cuthill_mckee

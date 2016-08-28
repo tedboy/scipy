@@ -1,0 +1,23 @@
+scipy.odr.Output
+================
+
+.. currentmodule:: scipy.odr
+
+.. autoclass:: Output
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Output.__init__
+      ~Output.pprint
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+scipy.ndimage.morphological_gradient
+====================================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: morphological_gradient

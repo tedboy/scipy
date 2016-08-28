@@ -1,0 +1,6 @@
+scipy.signal.ellipap
+====================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: ellipap

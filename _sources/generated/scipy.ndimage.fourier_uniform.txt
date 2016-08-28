@@ -1,0 +1,6 @@
+scipy.ndimage.fourier_uniform
+=============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: fourier_uniform

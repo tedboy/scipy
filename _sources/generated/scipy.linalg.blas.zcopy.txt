@@ -1,0 +1,6 @@
+scipy.linalg.blas.zcopy
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: zcopy

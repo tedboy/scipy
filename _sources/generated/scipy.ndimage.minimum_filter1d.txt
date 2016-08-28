@@ -1,0 +1,6 @@
+scipy.ndimage.minimum_filter1d
+==============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: minimum_filter1d

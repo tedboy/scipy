@@ -1,0 +1,6 @@
+scipy.special.ts_roots
+======================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: ts_roots

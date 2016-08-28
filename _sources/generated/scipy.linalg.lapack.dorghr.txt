@@ -1,0 +1,6 @@
+scipy.linalg.lapack.dorghr
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: dorghr

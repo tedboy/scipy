@@ -1,0 +1,6 @@
+scipy.linalg.lapack.dsbev
+=========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: dsbev

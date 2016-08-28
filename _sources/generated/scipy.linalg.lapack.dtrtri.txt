@@ -1,0 +1,6 @@
+scipy.linalg.lapack.dtrtri
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: dtrtri

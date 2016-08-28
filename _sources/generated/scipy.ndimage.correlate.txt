@@ -1,0 +1,6 @@
+scipy.ndimage.correlate
+=======================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: correlate

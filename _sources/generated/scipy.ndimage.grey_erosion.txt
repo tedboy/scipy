@@ -1,0 +1,6 @@
+scipy.ndimage.grey_erosion
+==========================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: grey_erosion

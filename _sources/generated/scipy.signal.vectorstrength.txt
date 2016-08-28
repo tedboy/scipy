@@ -1,0 +1,6 @@
+scipy.signal.vectorstrength
+===========================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: vectorstrength

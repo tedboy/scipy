@@ -1,0 +1,6 @@
+scipy.sparse.linalg.norm
+========================
+
+.. currentmodule:: scipy.sparse.linalg
+
+.. autofunction:: norm

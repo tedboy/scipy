@@ -1,0 +1,6 @@
+scipy.stats.mstats.sen_seasonal_slopes
+======================================
+
+.. currentmodule:: scipy.stats.mstats
+
+.. autofunction:: sen_seasonal_slopes

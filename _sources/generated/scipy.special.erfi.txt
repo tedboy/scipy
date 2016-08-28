@@ -1,0 +1,6 @@
+scipy.special.erfi
+==================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: erfi

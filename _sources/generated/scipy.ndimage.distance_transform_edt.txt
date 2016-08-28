@@ -1,0 +1,6 @@
+scipy.ndimage.distance_transform_edt
+====================================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: distance_transform_edt

@@ -1,0 +1,6 @@
+scipy.special.chndtrix
+======================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: chndtrix

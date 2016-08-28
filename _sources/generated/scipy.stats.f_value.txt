@@ -1,0 +1,6 @@
+scipy.stats.f_value
+===================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: f_value

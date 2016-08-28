@@ -1,0 +1,6 @@
+scipy.interpolate.pchip_interpolate
+===================================
+
+.. currentmodule:: scipy.interpolate
+
+.. autofunction:: pchip_interpolate

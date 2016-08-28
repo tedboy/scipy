@@ -1,0 +1,6 @@
+scipy.ndimage.binary_opening
+============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: binary_opening

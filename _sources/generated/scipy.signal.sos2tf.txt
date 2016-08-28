@@ -1,0 +1,6 @@
+scipy.signal.sos2tf
+===================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: sos2tf

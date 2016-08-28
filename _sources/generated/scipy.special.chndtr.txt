@@ -1,0 +1,6 @@
+scipy.special.chndtr
+====================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: chndtr

@@ -1,0 +1,30 @@
+scipy.spatial.Voronoi
+=====================
+
+.. currentmodule:: scipy.spatial
+
+.. autoclass:: Voronoi
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Voronoi.__init__
+      ~Voronoi.add_points
+      ~Voronoi.close
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Voronoi.ridge_dict
+   
+   

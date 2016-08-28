@@ -1,0 +1,39 @@
+scipy.interpolate.pchip
+=======================
+
+.. currentmodule:: scipy.interpolate
+
+.. autoclass:: pchip
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~pchip.__init__
+      ~pchip.antiderivative
+      ~pchip.construct_fast
+      ~pchip.derivative
+      ~pchip.extend
+      ~pchip.from_derivatives
+      ~pchip.from_power_basis
+      ~pchip.integrate
+      ~pchip.roots
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~pchip.axis
+      ~pchip.c
+      ~pchip.extrapolate
+      ~pchip.x
+   
+   

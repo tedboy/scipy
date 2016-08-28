@@ -1,0 +1,6 @@
+scipy.ndimage.gaussian_filter
+=============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: gaussian_filter

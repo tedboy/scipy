@@ -1,0 +1,6 @@
+scipy.linalg.blas.cgemv
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: cgemv

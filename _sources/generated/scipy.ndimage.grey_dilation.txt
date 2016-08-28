@@ -1,0 +1,6 @@
+scipy.ndimage.grey_dilation
+===========================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: grey_dilation

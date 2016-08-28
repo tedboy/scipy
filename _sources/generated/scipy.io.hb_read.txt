@@ -1,0 +1,6 @@
+scipy.io.hb_read
+================
+
+.. currentmodule:: scipy.io
+
+.. autofunction:: hb_read

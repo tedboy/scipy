@@ -1,0 +1,6 @@
+scipy.linalg.blas.zher
+======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: zher

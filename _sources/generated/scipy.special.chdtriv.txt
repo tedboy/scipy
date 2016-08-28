@@ -1,0 +1,6 @@
+scipy.special.chdtriv
+=====================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: chdtriv

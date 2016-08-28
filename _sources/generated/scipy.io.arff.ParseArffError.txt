@@ -1,0 +1,6 @@
+scipy.io.arff.ParseArffError
+============================
+
+.. currentmodule:: scipy.io.arff
+
+.. autoexception:: ParseArffError

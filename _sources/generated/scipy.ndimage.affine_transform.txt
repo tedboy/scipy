@@ -1,0 +1,6 @@
+scipy.ndimage.affine_transform
+==============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: affine_transform

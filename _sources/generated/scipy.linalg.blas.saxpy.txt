@@ -1,0 +1,6 @@
+scipy.linalg.blas.saxpy
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: saxpy

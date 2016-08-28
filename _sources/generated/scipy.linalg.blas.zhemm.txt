@@ -1,0 +1,6 @@
+scipy.linalg.blas.zhemm
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: zhemm

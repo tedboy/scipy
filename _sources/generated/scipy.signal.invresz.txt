@@ -1,0 +1,6 @@
+scipy.signal.invresz
+====================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: invresz

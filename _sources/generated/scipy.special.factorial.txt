@@ -1,0 +1,6 @@
+scipy.special.factorial
+=======================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: factorial

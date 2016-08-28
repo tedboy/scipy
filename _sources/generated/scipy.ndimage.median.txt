@@ -1,0 +1,6 @@
+scipy.ndimage.median
+====================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: median

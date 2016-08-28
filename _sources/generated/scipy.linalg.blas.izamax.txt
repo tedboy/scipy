@@ -1,0 +1,6 @@
+scipy.linalg.blas.izamax
+========================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: izamax

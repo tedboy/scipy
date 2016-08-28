@@ -1,0 +1,39 @@
+scipy.interpolate.PPoly
+=======================
+
+.. currentmodule:: scipy.interpolate
+
+.. autoclass:: PPoly
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~PPoly.__init__
+      ~PPoly.antiderivative
+      ~PPoly.construct_fast
+      ~PPoly.derivative
+      ~PPoly.extend
+      ~PPoly.from_bernstein_basis
+      ~PPoly.from_spline
+      ~PPoly.integrate
+      ~PPoly.roots
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~PPoly.axis
+      ~PPoly.c
+      ~PPoly.extrapolate
+      ~PPoly.x
+   
+   

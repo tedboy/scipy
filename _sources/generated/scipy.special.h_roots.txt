@@ -1,0 +1,6 @@
+scipy.special.h_roots
+=====================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: h_roots

@@ -1,0 +1,6 @@
+scipy.ndimage.generic_laplace
+=============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: generic_laplace

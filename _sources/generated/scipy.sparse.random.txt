@@ -1,0 +1,6 @@
+scipy.sparse.random
+===================
+
+.. currentmodule:: scipy.sparse
+
+.. autofunction:: random

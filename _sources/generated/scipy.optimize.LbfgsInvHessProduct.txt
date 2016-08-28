@@ -1,0 +1,36 @@
+scipy.optimize.LbfgsInvHessProduct
+==================================
+
+.. currentmodule:: scipy.optimize
+
+.. autoclass:: LbfgsInvHessProduct
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~LbfgsInvHessProduct.__init__
+      ~LbfgsInvHessProduct.adjoint
+      ~LbfgsInvHessProduct.dot
+      ~LbfgsInvHessProduct.matmat
+      ~LbfgsInvHessProduct.matvec
+      ~LbfgsInvHessProduct.rmatvec
+      ~LbfgsInvHessProduct.todense
+      ~LbfgsInvHessProduct.transpose
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~LbfgsInvHessProduct.H
+      ~LbfgsInvHessProduct.T
+   
+   

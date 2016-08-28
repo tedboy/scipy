@@ -1,0 +1,6 @@
+scipy.linalg.lapack.slamch
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: slamch

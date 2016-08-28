@@ -1,0 +1,6 @@
+scipy.special.chndtrinc
+=======================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: chndtrinc

@@ -1,0 +1,6 @@
+scipy.linalg.lapack.slauum
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: slauum

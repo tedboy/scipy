@@ -1,0 +1,6 @@
+scipy.integrate.IntegrationWarning
+==================================
+
+.. currentmodule:: scipy.integrate
+
+.. autoexception:: IntegrationWarning

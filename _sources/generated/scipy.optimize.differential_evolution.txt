@@ -1,0 +1,6 @@
+scipy.optimize.differential_evolution
+=====================================
+
+.. currentmodule:: scipy.optimize
+
+.. autofunction:: differential_evolution

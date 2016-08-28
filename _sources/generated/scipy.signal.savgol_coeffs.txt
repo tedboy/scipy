@@ -1,0 +1,6 @@
+scipy.signal.savgol_coeffs
+==========================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: savgol_coeffs

@@ -1,0 +1,6 @@
+scipy.cluster.hierarchy.cut_tree
+================================
+
+.. currentmodule:: scipy.cluster.hierarchy
+
+.. autofunction:: cut_tree

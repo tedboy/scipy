@@ -1,0 +1,6 @@
+scipy.ndimage.sum
+=================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: sum

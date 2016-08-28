@@ -1,0 +1,6 @@
+scipy.ndimage.mean
+==================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: mean

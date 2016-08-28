@@ -1,0 +1,6 @@
+scipy.linalg.lapack.dlauum
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: dlauum

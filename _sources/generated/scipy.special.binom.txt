@@ -1,0 +1,6 @@
+scipy.special.binom
+===================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: binom

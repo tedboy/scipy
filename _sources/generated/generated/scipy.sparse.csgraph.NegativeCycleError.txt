@@ -1,0 +1,6 @@
+scipy.sparse.csgraph.NegativeCycleError
+=======================================
+
+.. currentmodule:: scipy.sparse.csgraph
+
+.. autoexception:: NegativeCycleError

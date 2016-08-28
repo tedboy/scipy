@@ -1,0 +1,6 @@
+scipy.integrate.nquad
+=====================
+
+.. currentmodule:: scipy.integrate
+
+.. autofunction:: nquad

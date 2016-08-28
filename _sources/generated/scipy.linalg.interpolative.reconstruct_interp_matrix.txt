@@ -1,0 +1,6 @@
+scipy.linalg.interpolative.reconstruct_interp_matrix
+====================================================
+
+.. currentmodule:: scipy.linalg.interpolative
+
+.. autofunction:: reconstruct_interp_matrix

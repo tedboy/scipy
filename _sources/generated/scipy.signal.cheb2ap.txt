@@ -1,0 +1,6 @@
+scipy.signal.cheb2ap
+====================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: cheb2ap

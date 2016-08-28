@@ -1,0 +1,6 @@
+scipy.optimize.basinhopping
+===========================
+
+.. currentmodule:: scipy.optimize
+
+.. autofunction:: basinhopping

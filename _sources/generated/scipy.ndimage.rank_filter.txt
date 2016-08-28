@@ -1,0 +1,6 @@
+scipy.ndimage.rank_filter
+=========================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: rank_filter

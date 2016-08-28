@@ -1,0 +1,6 @@
+scipy.linalg.lapack.dlasd4
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: dlasd4

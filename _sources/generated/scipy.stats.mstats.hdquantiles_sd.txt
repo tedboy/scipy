@@ -1,0 +1,6 @@
+scipy.stats.mstats.hdquantiles_sd
+=================================
+
+.. currentmodule:: scipy.stats.mstats
+
+.. autofunction:: hdquantiles_sd

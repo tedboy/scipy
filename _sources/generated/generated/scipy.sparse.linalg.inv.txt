@@ -1,0 +1,6 @@
+scipy.sparse.linalg.inv
+=======================
+
+.. currentmodule:: scipy.sparse.linalg
+
+.. autofunction:: inv

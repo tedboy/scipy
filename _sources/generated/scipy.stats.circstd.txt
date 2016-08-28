@@ -1,0 +1,6 @@
+scipy.stats.circstd
+===================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: circstd

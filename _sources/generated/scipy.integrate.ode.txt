@@ -1,0 +1,35 @@
+scipy.integrate.ode
+===================
+
+.. currentmodule:: scipy.integrate
+
+.. autoclass:: ode
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ode.__init__
+      ~ode.integrate
+      ~ode.set_f_params
+      ~ode.set_initial_value
+      ~ode.set_integrator
+      ~ode.set_jac_params
+      ~ode.set_solout
+      ~ode.successful
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ode.y
+   
+   

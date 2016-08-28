@@ -1,0 +1,6 @@
+scipy.linalg.lapack.ctrtrs
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: ctrtrs

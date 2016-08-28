@@ -1,0 +1,6 @@
+scipy.special.boxcox
+====================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: boxcox

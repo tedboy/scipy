@@ -1,0 +1,6 @@
+scipy.ndimage.grey_opening
+==========================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: grey_opening

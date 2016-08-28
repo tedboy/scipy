@@ -1,0 +1,6 @@
+scipy.linalg.blas.crotg
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: crotg

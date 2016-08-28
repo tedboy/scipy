@@ -1,0 +1,6 @@
+scipy.signal.welch
+==================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: welch

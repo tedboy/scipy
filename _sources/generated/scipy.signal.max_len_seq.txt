@@ -1,0 +1,6 @@
+scipy.signal.max_len_seq
+========================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: max_len_seq

@@ -1,0 +1,6 @@
+scipy.linalg.lapack.dlaswp
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: dlaswp

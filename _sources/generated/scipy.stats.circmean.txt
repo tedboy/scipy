@@ -1,0 +1,6 @@
+scipy.stats.circmean
+====================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: circmean

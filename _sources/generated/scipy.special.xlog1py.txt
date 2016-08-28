@@ -1,0 +1,6 @@
+scipy.special.xlog1py
+=====================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: xlog1py

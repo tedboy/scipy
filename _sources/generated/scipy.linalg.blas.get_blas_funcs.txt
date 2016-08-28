@@ -1,0 +1,6 @@
+scipy.linalg.blas.get_blas_funcs
+================================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autofunction:: get_blas_funcs

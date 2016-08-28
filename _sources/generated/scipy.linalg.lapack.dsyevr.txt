@@ -1,0 +1,6 @@
+scipy.linalg.lapack.dsyevr
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: dsyevr

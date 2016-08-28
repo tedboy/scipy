@@ -1,0 +1,6 @@
+scipy.linalg.interpolative.reconstruct_skel_matrix
+==================================================
+
+.. currentmodule:: scipy.linalg.interpolative
+
+.. autofunction:: reconstruct_skel_matrix

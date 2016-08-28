@@ -1,0 +1,6 @@
+scipy.special.entr
+==================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: entr

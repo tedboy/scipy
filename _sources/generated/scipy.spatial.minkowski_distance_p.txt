@@ -1,0 +1,6 @@
+scipy.spatial.minkowski_distance_p
+==================================
+
+.. currentmodule:: scipy.spatial
+
+.. autofunction:: minkowski_distance_p

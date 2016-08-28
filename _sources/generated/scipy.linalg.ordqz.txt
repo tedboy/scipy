@@ -1,0 +1,6 @@
+scipy.linalg.ordqz
+==================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: ordqz

@@ -1,0 +1,6 @@
+scipy.signal.hanning
+====================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: hanning

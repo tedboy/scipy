@@ -1,0 +1,6 @@
+scipy.spatial.delaunay_plot_2d
+==============================
+
+.. currentmodule:: scipy.spatial
+
+.. autofunction:: delaunay_plot_2d

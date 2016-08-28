@@ -1,0 +1,6 @@
+scipy.linalg.blas.srotm
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: srotm

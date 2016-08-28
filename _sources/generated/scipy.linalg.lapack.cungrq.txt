@@ -1,0 +1,6 @@
+scipy.linalg.lapack.cungrq
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: cungrq

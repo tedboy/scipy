@@ -1,0 +1,6 @@
+scipy.linalg.lapack.strsyl
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: strsyl

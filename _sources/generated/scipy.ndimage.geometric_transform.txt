@@ -1,0 +1,6 @@
+scipy.ndimage.geometric_transform
+=================================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: geometric_transform

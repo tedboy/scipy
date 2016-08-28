@@ -1,0 +1,6 @@
+scipy.linalg.interpolative.rand
+===============================
+
+.. currentmodule:: scipy.linalg.interpolative
+
+.. autofunction:: rand

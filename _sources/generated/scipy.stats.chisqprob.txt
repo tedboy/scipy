@@ -1,0 +1,6 @@
+scipy.stats.chisqprob
+=====================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: chisqprob

@@ -1,0 +1,6 @@
+scipy.ndimage.fourier_ellipsoid
+===============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: fourier_ellipsoid

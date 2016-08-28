@@ -1,0 +1,6 @@
+scipy.ndimage.generic_filter
+============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: generic_filter

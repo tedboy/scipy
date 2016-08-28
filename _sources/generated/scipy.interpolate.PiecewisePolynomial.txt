@@ -1,0 +1,32 @@
+scipy.interpolate.PiecewisePolynomial
+=====================================
+
+.. currentmodule:: scipy.interpolate
+
+.. autoclass:: PiecewisePolynomial
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~PiecewisePolynomial.__init__
+      ~PiecewisePolynomial.append
+      ~PiecewisePolynomial.derivative
+      ~PiecewisePolynomial.derivatives
+      ~PiecewisePolynomial.extend
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~PiecewisePolynomial.dtype
+   
+   

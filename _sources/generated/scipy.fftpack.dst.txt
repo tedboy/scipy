@@ -1,0 +1,6 @@
+scipy.fftpack.dst
+=================
+
+.. currentmodule:: scipy.fftpack
+
+.. autofunction:: dst

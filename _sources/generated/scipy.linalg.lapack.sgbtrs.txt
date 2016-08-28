@@ -1,0 +1,6 @@
+scipy.linalg.lapack.sgbtrs
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: sgbtrs

@@ -1,0 +1,6 @@
+scipy.ndimage.maximum_filter1d
+==============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: maximum_filter1d

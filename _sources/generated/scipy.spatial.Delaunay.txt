@@ -1,0 +1,36 @@
+scipy.spatial.Delaunay
+======================
+
+.. currentmodule:: scipy.spatial
+
+.. autoclass:: Delaunay
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~Delaunay.__init__
+      ~Delaunay.add_points
+      ~Delaunay.close
+      ~Delaunay.find_simplex
+      ~Delaunay.lift_points
+      ~Delaunay.plane_distance
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~Delaunay.convex_hull
+      ~Delaunay.transform
+      ~Delaunay.vertex_neighbor_vertices
+      ~Delaunay.vertex_to_simplex
+   
+   

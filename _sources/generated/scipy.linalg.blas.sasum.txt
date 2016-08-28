@@ -1,0 +1,6 @@
+scipy.linalg.blas.sasum
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: sasum

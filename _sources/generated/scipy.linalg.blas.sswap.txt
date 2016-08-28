@@ -1,0 +1,6 @@
+scipy.linalg.blas.sswap
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: sswap

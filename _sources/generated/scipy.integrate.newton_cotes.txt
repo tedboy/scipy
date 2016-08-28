@@ -1,0 +1,6 @@
+scipy.integrate.newton_cotes
+============================
+
+.. currentmodule:: scipy.integrate
+
+.. autofunction:: newton_cotes

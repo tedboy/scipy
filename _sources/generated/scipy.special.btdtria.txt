@@ -1,0 +1,6 @@
+scipy.special.btdtria
+=====================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: btdtria

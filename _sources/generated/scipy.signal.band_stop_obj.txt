@@ -1,0 +1,6 @@
+scipy.signal.band_stop_obj
+==========================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: band_stop_obj

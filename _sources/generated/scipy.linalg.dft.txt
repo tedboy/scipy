@@ -1,0 +1,6 @@
+scipy.linalg.dft
+================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: dft

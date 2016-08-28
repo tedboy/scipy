@@ -1,0 +1,6 @@
+scipy.linalg.orthogonal_procrustes
+==================================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: orthogonal_procrustes

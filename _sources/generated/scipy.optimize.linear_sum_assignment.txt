@@ -1,0 +1,6 @@
+scipy.optimize.linear_sum_assignment
+====================================
+
+.. currentmodule:: scipy.optimize
+
+.. autofunction:: linear_sum_assignment

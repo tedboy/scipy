@@ -1,0 +1,6 @@
+scipy.signal.sos2zpk
+====================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: sos2zpk

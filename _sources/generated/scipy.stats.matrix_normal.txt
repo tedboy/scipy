@@ -1,0 +1,6 @@
+scipy.stats.matrix_normal
+=========================
+
+.. currentmodule:: scipy.stats
+
+.. autodata:: matrix_normal

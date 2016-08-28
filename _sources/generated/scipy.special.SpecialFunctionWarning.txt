@@ -1,0 +1,6 @@
+scipy.special.SpecialFunctionWarning
+====================================
+
+.. currentmodule:: scipy.special
+
+.. autoexception:: SpecialFunctionWarning

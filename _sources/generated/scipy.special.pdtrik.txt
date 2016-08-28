@@ -1,0 +1,6 @@
+scipy.special.pdtrik
+====================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: pdtrik

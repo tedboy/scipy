@@ -1,0 +1,6 @@
+scipy.special.eval_legendre
+===========================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: eval_legendre

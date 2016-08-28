@@ -1,0 +1,6 @@
+scipy.linalg.polar
+==================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: polar

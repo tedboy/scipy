@@ -1,0 +1,6 @@
+scipy.ndimage.black_tophat
+==========================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: black_tophat

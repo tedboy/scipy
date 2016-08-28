@@ -1,0 +1,6 @@
+scipy.signal.findfreqs
+======================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: findfreqs

@@ -1,0 +1,6 @@
+scipy.stats.exponnorm
+=====================
+
+.. currentmodule:: scipy.stats
+
+.. autodata:: exponnorm

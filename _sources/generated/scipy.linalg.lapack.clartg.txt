@@ -1,0 +1,6 @@
+scipy.linalg.lapack.clartg
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: clartg

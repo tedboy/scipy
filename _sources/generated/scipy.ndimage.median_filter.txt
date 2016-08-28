@@ -1,0 +1,6 @@
+scipy.ndimage.median_filter
+===========================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: median_filter

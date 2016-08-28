@@ -1,0 +1,6 @@
+scipy.ndimage.histogram
+=======================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: histogram

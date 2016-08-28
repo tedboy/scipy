@@ -1,0 +1,6 @@
+scipy.linalg.lapack.slarf
+=========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: slarf

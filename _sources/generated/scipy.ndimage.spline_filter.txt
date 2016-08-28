@@ -1,0 +1,6 @@
+scipy.ndimage.spline_filter
+===========================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: spline_filter

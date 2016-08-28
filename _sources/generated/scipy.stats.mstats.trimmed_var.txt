@@ -1,0 +1,6 @@
+scipy.stats.mstats.trimmed_var
+==============================
+
+.. currentmodule:: scipy.stats.mstats
+
+.. autofunction:: trimmed_var

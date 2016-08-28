@@ -1,0 +1,6 @@
+scipy.linalg.lapack.cgesv
+=========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: cgesv

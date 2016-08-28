@@ -1,0 +1,6 @@
+scipy.linalg.lapack.ctrsyl
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: ctrsyl

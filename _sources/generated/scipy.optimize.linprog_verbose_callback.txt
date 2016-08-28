@@ -1,0 +1,6 @@
+scipy.optimize.linprog_verbose_callback
+=======================================
+
+.. currentmodule:: scipy.optimize
+
+.. autofunction:: linprog_verbose_callback

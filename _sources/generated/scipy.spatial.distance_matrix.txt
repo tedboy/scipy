@@ -1,0 +1,6 @@
+scipy.spatial.distance_matrix
+=============================
+
+.. currentmodule:: scipy.spatial
+
+.. autofunction:: distance_matrix

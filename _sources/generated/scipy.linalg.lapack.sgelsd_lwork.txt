@@ -1,0 +1,6 @@
+scipy.linalg.lapack.sgelsd_lwork
+================================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: sgelsd_lwork

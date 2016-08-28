@@ -1,0 +1,6 @@
+scipy.signal.cubic
+==================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: cubic

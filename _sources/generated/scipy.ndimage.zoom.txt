@@ -1,0 +1,6 @@
+scipy.ndimage.zoom
+==================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: zoom

@@ -1,0 +1,6 @@
+scipy.ndimage.binary_dilation
+=============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: binary_dilation

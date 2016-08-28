@@ -1,0 +1,6 @@
+scipy.linalg.qr_insert
+======================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: qr_insert

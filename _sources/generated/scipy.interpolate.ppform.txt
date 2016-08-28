@@ -1,0 +1,40 @@
+scipy.interpolate.ppform
+========================
+
+.. currentmodule:: scipy.interpolate
+
+.. autoclass:: ppform
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ppform.__init__
+      ~ppform.antiderivative
+      ~ppform.construct_fast
+      ~ppform.derivative
+      ~ppform.extend
+      ~ppform.from_bernstein_basis
+      ~ppform.from_spline
+      ~ppform.fromspline
+      ~ppform.integrate
+      ~ppform.roots
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~ppform.axis
+      ~ppform.c
+      ~ppform.extrapolate
+      ~ppform.x
+   
+   

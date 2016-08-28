@@ -1,0 +1,6 @@
+scipy.special.ellip_normal
+==========================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: ellip_normal

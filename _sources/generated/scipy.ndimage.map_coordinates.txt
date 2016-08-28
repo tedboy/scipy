@@ -1,0 +1,6 @@
+scipy.ndimage.map_coordinates
+=============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: map_coordinates

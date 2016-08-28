@@ -1,0 +1,6 @@
+scipy.optimize.OptimizeWarning
+==============================
+
+.. currentmodule:: scipy.optimize
+
+.. autoexception:: OptimizeWarning

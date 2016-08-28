@@ -1,0 +1,27 @@
+scipy.io.FortranFile
+====================
+
+.. currentmodule:: scipy.io
+
+.. autoclass:: FortranFile
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~FortranFile.__init__
+      ~FortranFile.close
+      ~FortranFile.read_ints
+      ~FortranFile.read_reals
+      ~FortranFile.read_record
+      ~FortranFile.write_record
+   
+   
+
+   
+   
+   

@@ -1,0 +1,6 @@
+scipy.linalg.blas.dznrm2
+========================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: dznrm2

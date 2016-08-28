@@ -1,0 +1,6 @@
+scipy.signal.quadratic
+======================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: quadratic

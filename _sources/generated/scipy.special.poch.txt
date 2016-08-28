@@ -1,0 +1,6 @@
+scipy.special.poch
+==================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: poch

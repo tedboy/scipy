@@ -1,0 +1,6 @@
+scipy.ndimage.sobel
+===================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: sobel

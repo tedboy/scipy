@@ -1,0 +1,39 @@
+scipy.optimize.OptimizeResult
+=============================
+
+.. currentmodule:: scipy.optimize
+
+.. autoclass:: OptimizeResult
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~OptimizeResult.clear
+      ~OptimizeResult.copy
+      ~OptimizeResult.fromkeys
+      ~OptimizeResult.get
+      ~OptimizeResult.has_key
+      ~OptimizeResult.items
+      ~OptimizeResult.iteritems
+      ~OptimizeResult.iterkeys
+      ~OptimizeResult.itervalues
+      ~OptimizeResult.keys
+      ~OptimizeResult.pop
+      ~OptimizeResult.popitem
+      ~OptimizeResult.setdefault
+      ~OptimizeResult.update
+      ~OptimizeResult.values
+      ~OptimizeResult.viewitems
+      ~OptimizeResult.viewkeys
+      ~OptimizeResult.viewvalues
+   
+   
+
+   
+   
+   

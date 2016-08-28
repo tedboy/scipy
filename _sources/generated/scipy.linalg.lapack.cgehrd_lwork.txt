@@ -1,0 +1,6 @@
+scipy.linalg.lapack.cgehrd_lwork
+================================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: cgehrd_lwork

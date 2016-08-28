@@ -1,0 +1,6 @@
+scipy.signal.cosine
+===================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: cosine

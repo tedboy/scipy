@@ -1,0 +1,6 @@
+scipy.linalg.interpolative.estimate_spectral_norm_diff
+======================================================
+
+.. currentmodule:: scipy.linalg.interpolative
+
+.. autofunction:: estimate_spectral_norm_diff

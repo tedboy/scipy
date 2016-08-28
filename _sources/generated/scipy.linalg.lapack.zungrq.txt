@@ -1,0 +1,6 @@
+scipy.linalg.lapack.zungrq
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: zungrq

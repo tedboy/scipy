@@ -1,0 +1,6 @@
+scipy.signal.cmplx_sort
+=======================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: cmplx_sort

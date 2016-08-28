@@ -1,0 +1,6 @@
+scipy.ndimage.minimum
+=====================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: minimum

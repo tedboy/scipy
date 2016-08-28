@@ -1,0 +1,6 @@
+scipy.linalg.lapack.dgeqp3
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: dgeqp3

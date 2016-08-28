@@ -1,0 +1,6 @@
+scipy.ndimage.watershed_ift
+===========================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: watershed_ift

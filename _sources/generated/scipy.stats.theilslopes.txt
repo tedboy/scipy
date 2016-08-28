@@ -1,0 +1,6 @@
+scipy.stats.theilslopes
+=======================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: theilslopes

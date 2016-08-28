@@ -1,0 +1,6 @@
+scipy.linalg.lapack.cgetrf
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: cgetrf

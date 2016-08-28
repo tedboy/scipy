@@ -1,0 +1,6 @@
+scipy.special.sinc
+==================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: sinc

@@ -1,0 +1,6 @@
+scipy.ndimage.percentile_filter
+===============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: percentile_filter

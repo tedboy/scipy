@@ -1,0 +1,6 @@
+scipy.io.hb_write
+=================
+
+.. currentmodule:: scipy.io
+
+.. autofunction:: hb_write

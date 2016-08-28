@@ -1,0 +1,6 @@
+scipy.ndimage.binary_closing
+============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: binary_closing

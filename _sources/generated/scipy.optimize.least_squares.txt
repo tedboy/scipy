@@ -1,0 +1,6 @@
+scipy.optimize.least_squares
+============================
+
+.. currentmodule:: scipy.optimize
+
+.. autofunction:: least_squares

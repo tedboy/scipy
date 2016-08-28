@@ -1,0 +1,6 @@
+scipy.signal.csd
+================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: csd

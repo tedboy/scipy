@@ -1,0 +1,6 @@
+scipy.integrate.quad_explain
+============================
+
+.. currentmodule:: scipy.integrate
+
+.. autofunction:: quad_explain

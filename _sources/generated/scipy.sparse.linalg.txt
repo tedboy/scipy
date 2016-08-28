@@ -1,0 +1,62 @@
+scipy.sparse.linalg
+===================
+
+.. automodule:: scipy.sparse.linalg
+
+   
+   
+   .. rubric:: Functions
+
+   .. autosummary::
+   
+      aslinearoperator
+      bicg
+      bicgstab
+      cg
+      cgs
+      eigs
+      eigsh
+      expm
+      expm_multiply
+      factorized
+      gmres
+      inv
+      lgmres
+      lobpcg
+      lsmr
+      lsqr
+      minres
+      norm
+      onenormest
+      qmr
+      spilu
+      splu
+      spsolve
+      svds
+      use_solver
+   
+   
+
+   
+   
+   .. rubric:: Classes
+
+   .. autosummary::
+   
+      LinearOperator
+      SuperLU
+      Tester
+   
+   
+
+   
+   
+   .. rubric:: Exceptions
+
+   .. autosummary::
+   
+      ArpackError
+      ArpackNoConvergence
+      MatrixRankWarning
+   
+   

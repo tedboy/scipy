@@ -1,0 +1,6 @@
+scipy.misc.ascent
+=================
+
+.. currentmodule:: scipy.misc
+
+.. autofunction:: ascent

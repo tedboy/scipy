@@ -1,0 +1,6 @@
+scipy.ndimage.variance
+======================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: variance

@@ -1,0 +1,6 @@
+scipy.misc.source
+=================
+
+.. currentmodule:: scipy.misc
+
+.. autofunction:: source

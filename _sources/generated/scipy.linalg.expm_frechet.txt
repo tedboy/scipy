@@ -1,0 +1,6 @@
+scipy.linalg.expm_frechet
+=========================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: expm_frechet

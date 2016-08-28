@@ -1,0 +1,6 @@
+scipy.ndimage.generic_gradient_magnitude
+========================================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: generic_gradient_magnitude

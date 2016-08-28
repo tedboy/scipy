@@ -1,0 +1,6 @@
+scipy.stats.median_test
+=======================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: median_test

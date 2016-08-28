@@ -1,0 +1,6 @@
+scipy.linalg.lapack.claswp
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: claswp

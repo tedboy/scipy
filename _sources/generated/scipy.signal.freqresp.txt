@@ -1,0 +1,6 @@
+scipy.signal.freqresp
+=====================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: freqresp

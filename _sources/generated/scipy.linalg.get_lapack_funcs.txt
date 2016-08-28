@@ -1,0 +1,6 @@
+scipy.linalg.get_lapack_funcs
+=============================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: get_lapack_funcs

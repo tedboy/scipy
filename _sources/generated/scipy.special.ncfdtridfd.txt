@@ -1,0 +1,6 @@
+scipy.special.ncfdtridfd
+========================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: ncfdtridfd

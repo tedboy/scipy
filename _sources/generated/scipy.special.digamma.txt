@@ -1,0 +1,6 @@
+scipy.special.digamma
+=====================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: digamma

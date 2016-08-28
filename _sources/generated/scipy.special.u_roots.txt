@@ -1,0 +1,6 @@
+scipy.special.u_roots
+=====================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: u_roots

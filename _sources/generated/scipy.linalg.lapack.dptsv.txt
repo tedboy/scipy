@@ -1,0 +1,6 @@
+scipy.linalg.lapack.dptsv
+=========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: dptsv

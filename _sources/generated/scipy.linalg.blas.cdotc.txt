@@ -1,0 +1,6 @@
+scipy.linalg.blas.cdotc
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: cdotc

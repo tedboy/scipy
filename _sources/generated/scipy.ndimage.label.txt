@@ -1,0 +1,6 @@
+scipy.ndimage.label
+===================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: label

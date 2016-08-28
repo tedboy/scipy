@@ -1,0 +1,6 @@
+scipy.linalg.rq
+===============
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: rq

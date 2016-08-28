@@ -1,0 +1,44 @@
+scipy.signal.StateSpace
+=======================
+
+.. currentmodule:: scipy.signal
+
+.. autoclass:: StateSpace
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~StateSpace.__init__
+      ~StateSpace.bode
+      ~StateSpace.freqresp
+      ~StateSpace.impulse
+      ~StateSpace.output
+      ~StateSpace.step
+      ~StateSpace.to_ss
+      ~StateSpace.to_tf
+      ~StateSpace.to_zpk
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~StateSpace.A
+      ~StateSpace.B
+      ~StateSpace.C
+      ~StateSpace.D
+      ~StateSpace.den
+      ~StateSpace.gain
+      ~StateSpace.num
+      ~StateSpace.poles
+      ~StateSpace.zeros
+   
+   

@@ -1,0 +1,6 @@
+scipy.special.perm
+==================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: perm

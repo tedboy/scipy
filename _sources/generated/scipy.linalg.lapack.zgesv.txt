@@ -1,0 +1,6 @@
+scipy.linalg.lapack.zgesv
+=========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: zgesv

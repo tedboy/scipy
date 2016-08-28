@@ -1,0 +1,6 @@
+scipy.ndimage.white_tophat
+==========================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: white_tophat

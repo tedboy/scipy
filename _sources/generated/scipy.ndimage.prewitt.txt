@@ -1,0 +1,6 @@
+scipy.ndimage.prewitt
+=====================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: prewitt

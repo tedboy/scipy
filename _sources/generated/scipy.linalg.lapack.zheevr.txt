@@ -1,0 +1,6 @@
+scipy.linalg.lapack.zheevr
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: zheevr

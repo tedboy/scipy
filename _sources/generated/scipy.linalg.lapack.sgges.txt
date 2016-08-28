@@ -1,0 +1,6 @@
+scipy.linalg.lapack.sgges
+=========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: sgges

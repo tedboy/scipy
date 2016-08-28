@@ -1,0 +1,41 @@
+scipy.spatial.cKDTree
+=====================
+
+.. currentmodule:: scipy.spatial
+
+.. autoclass:: cKDTree
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~cKDTree.count_neighbors
+      ~cKDTree.query
+      ~cKDTree.query_ball_point
+      ~cKDTree.query_ball_tree
+      ~cKDTree.query_pairs
+      ~cKDTree.sparse_distance_matrix
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~cKDTree.boxsize
+      ~cKDTree.data
+      ~cKDTree.indices
+      ~cKDTree.leafsize
+      ~cKDTree.m
+      ~cKDTree.maxes
+      ~cKDTree.mins
+      ~cKDTree.n
+      ~cKDTree.tree
+   
+   

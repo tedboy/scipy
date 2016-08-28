@@ -1,0 +1,6 @@
+scipy.signal.group_delay
+========================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: group_delay

@@ -1,0 +1,6 @@
+scipy.stats.vonmises_line
+=========================
+
+.. currentmodule:: scipy.stats
+
+.. autodata:: vonmises_line

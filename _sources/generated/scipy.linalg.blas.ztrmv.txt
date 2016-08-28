@@ -1,0 +1,6 @@
+scipy.linalg.blas.ztrmv
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: ztrmv

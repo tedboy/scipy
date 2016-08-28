@@ -1,0 +1,6 @@
+scipy.stats.ss
+==============
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: ss

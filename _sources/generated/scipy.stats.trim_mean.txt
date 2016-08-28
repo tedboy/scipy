@@ -1,0 +1,6 @@
+scipy.stats.trim_mean
+=====================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: trim_mean

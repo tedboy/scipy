@@ -1,0 +1,6 @@
+scipy.interpolate.spltopp
+=========================
+
+.. currentmodule:: scipy.interpolate
+
+.. autofunction:: spltopp

@@ -1,0 +1,6 @@
+scipy.ndimage.standard_deviation
+================================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: standard_deviation

@@ -1,0 +1,33 @@
+scipy.io.netcdf_variable
+========================
+
+.. currentmodule:: scipy.io
+
+.. autoclass:: netcdf_variable
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~netcdf_variable.__init__
+      ~netcdf_variable.assignValue
+      ~netcdf_variable.getValue
+      ~netcdf_variable.itemsize
+      ~netcdf_variable.typecode
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~netcdf_variable.isrec
+      ~netcdf_variable.shape
+   
+   

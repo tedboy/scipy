@@ -1,0 +1,28 @@
+scipy.cluster.hierarchy.ClusterNode
+===================================
+
+.. currentmodule:: scipy.cluster.hierarchy
+
+.. autoclass:: ClusterNode
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~ClusterNode.__init__
+      ~ClusterNode.get_count
+      ~ClusterNode.get_id
+      ~ClusterNode.get_left
+      ~ClusterNode.get_right
+      ~ClusterNode.is_leaf
+      ~ClusterNode.pre_order
+   
+   
+
+   
+   
+   

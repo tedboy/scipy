@@ -1,0 +1,6 @@
+scipy.ndimage.shift
+===================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: shift

@@ -1,0 +1,6 @@
+scipy.ndimage.iterate_structure
+===============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: iterate_structure

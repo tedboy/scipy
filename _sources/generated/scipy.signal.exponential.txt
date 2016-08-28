@@ -1,0 +1,6 @@
+scipy.signal.exponential
+========================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: exponential

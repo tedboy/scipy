@@ -1,0 +1,6 @@
+scipy.signal.periodogram
+========================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: periodogram

@@ -1,0 +1,6 @@
+scipy.spatial.procrustes
+========================
+
+.. currentmodule:: scipy.spatial
+
+.. autofunction:: procrustes

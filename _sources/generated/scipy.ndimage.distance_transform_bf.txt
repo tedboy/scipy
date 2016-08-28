@@ -1,0 +1,6 @@
+scipy.ndimage.distance_transform_bf
+===================================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: distance_transform_bf

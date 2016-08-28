@@ -1,0 +1,6 @@
+scipy.linalg.blas.dzasum
+========================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: dzasum

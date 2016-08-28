@@ -1,0 +1,6 @@
+scipy.sparse.linalg.MatrixRankWarning
+=====================================
+
+.. currentmodule:: scipy.sparse.linalg
+
+.. autoexception:: MatrixRankWarning

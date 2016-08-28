@@ -1,0 +1,6 @@
+scipy.linalg.qr_update
+======================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: qr_update

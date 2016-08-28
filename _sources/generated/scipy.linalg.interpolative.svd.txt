@@ -1,0 +1,6 @@
+scipy.linalg.interpolative.svd
+==============================
+
+.. currentmodule:: scipy.linalg.interpolative
+
+.. autofunction:: svd

@@ -1,0 +1,6 @@
+scipy.special.eval_hermitenorm
+==============================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: eval_hermitenorm

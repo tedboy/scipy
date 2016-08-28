@@ -1,0 +1,6 @@
+scipy.spatial.distance.wminkowski
+=================================
+
+.. currentmodule:: scipy.spatial.distance
+
+.. autofunction:: wminkowski

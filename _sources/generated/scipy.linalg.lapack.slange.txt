@@ -1,0 +1,6 @@
+scipy.linalg.lapack.slange
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: slange

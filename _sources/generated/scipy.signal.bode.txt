@@ -1,0 +1,6 @@
+scipy.signal.bode
+=================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: bode

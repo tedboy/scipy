@@ -1,0 +1,6 @@
+scipy.linalg.lapack.strtri
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: strtri

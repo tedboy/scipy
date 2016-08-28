@@ -1,0 +1,6 @@
+scipy.stats.jarque_bera
+=======================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: jarque_bera

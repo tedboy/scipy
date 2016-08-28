@@ -1,0 +1,6 @@
+scipy.linalg.lapack.sorgqr
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: sorgqr

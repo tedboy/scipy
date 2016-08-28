@@ -1,0 +1,6 @@
+scipy.linalg.blas.dgemm
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: dgemm

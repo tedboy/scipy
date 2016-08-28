@@ -1,0 +1,6 @@
+scipy.special.diric
+===================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: diric

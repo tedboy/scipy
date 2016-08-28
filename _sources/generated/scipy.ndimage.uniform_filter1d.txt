@@ -1,0 +1,6 @@
+scipy.ndimage.uniform_filter1d
+==============================
+
+.. currentmodule:: scipy.ndimage
+
+.. autofunction:: uniform_filter1d

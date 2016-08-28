@@ -1,0 +1,6 @@
+scipy.signal.normalize
+======================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: normalize

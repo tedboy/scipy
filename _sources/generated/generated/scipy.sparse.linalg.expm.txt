@@ -1,0 +1,6 @@
+scipy.sparse.linalg.expm
+========================
+
+.. currentmodule:: scipy.sparse.linalg
+
+.. autofunction:: expm

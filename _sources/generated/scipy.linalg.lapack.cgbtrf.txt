@@ -1,0 +1,6 @@
+scipy.linalg.lapack.cgbtrf
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: cgbtrf

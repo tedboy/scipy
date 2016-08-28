@@ -1,0 +1,6 @@
+scipy.signal.qspline1d_eval
+===========================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: qspline1d_eval

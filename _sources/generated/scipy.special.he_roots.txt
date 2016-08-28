@@ -1,0 +1,6 @@
+scipy.special.he_roots
+======================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: he_roots

@@ -1,0 +1,6 @@
+scipy.special.kl_div
+====================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: kl_div

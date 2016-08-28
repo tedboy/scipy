@@ -1,0 +1,6 @@
+scipy.interpolate.splmake
+=========================
+
+.. currentmodule:: scipy.interpolate
+
+.. autofunction:: splmake

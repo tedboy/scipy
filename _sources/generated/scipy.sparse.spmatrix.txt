@@ -1,0 +1,62 @@
+scipy.sparse.spmatrix
+=====================
+
+.. currentmodule:: scipy.sparse
+
+.. autoclass:: spmatrix
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~spmatrix.__init__
+      ~spmatrix.asformat
+      ~spmatrix.asfptype
+      ~spmatrix.astype
+      ~spmatrix.conj
+      ~spmatrix.conjugate
+      ~spmatrix.copy
+      ~spmatrix.diagonal
+      ~spmatrix.dot
+      ~spmatrix.getH
+      ~spmatrix.get_shape
+      ~spmatrix.getcol
+      ~spmatrix.getformat
+      ~spmatrix.getmaxprint
+      ~spmatrix.getnnz
+      ~spmatrix.getrow
+      ~spmatrix.maximum
+      ~spmatrix.mean
+      ~spmatrix.minimum
+      ~spmatrix.multiply
+      ~spmatrix.nonzero
+      ~spmatrix.power
+      ~spmatrix.reshape
+      ~spmatrix.set_shape
+      ~spmatrix.setdiag
+      ~spmatrix.sum
+      ~spmatrix.toarray
+      ~spmatrix.tobsr
+      ~spmatrix.tocoo
+      ~spmatrix.todense
+      ~spmatrix.todia
+      ~spmatrix.todok
+      ~spmatrix.tolil
+      ~spmatrix.transpose
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~spmatrix.ndim
+      ~spmatrix.shape
+   
+   

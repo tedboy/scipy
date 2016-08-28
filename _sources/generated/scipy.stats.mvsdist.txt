@@ -1,0 +1,6 @@
+scipy.stats.mvsdist
+===================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: mvsdist

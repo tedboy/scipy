@@ -1,0 +1,6 @@
+scipy.stats.ttest_ind_from_stats
+================================
+
+.. currentmodule:: scipy.stats
+
+.. autofunction:: ttest_ind_from_stats

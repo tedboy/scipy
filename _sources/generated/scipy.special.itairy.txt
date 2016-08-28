@@ -1,0 +1,6 @@
+scipy.special.itairy
+====================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: itairy

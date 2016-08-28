@@ -1,0 +1,6 @@
+scipy.signal.tukey
+==================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: tukey

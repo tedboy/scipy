@@ -1,0 +1,6 @@
+scipy.stats.mstats.hdmedian
+===========================
+
+.. currentmodule:: scipy.stats.mstats
+
+.. autofunction:: hdmedian

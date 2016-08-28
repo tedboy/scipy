@@ -1,0 +1,6 @@
+scipy.signal.lp2bs
+==================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: lp2bs

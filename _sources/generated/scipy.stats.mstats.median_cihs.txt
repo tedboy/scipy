@@ -1,0 +1,6 @@
+scipy.stats.mstats.median_cihs
+==============================
+
+.. currentmodule:: scipy.stats.mstats
+
+.. autofunction:: median_cihs

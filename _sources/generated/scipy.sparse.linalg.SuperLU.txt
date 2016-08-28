@@ -1,0 +1,33 @@
+scipy.sparse.linalg.SuperLU
+===========================
+
+.. currentmodule:: scipy.sparse.linalg
+
+.. autoclass:: SuperLU
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~SuperLU.solve
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~SuperLU.L
+      ~SuperLU.U
+      ~SuperLU.nnz
+      ~SuperLU.perm_c
+      ~SuperLU.perm_r
+      ~SuperLU.shape
+   
+   

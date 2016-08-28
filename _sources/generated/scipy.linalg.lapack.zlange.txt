@@ -1,0 +1,6 @@
+scipy.linalg.lapack.zlange
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: zlange

@@ -1,0 +1,6 @@
+scipy.linalg.blas.dtrmv
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: dtrmv

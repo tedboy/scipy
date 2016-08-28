@@ -1,0 +1,6 @@
+scipy.odr.odr
+=============
+
+.. currentmodule:: scipy.odr
+
+.. autofunction:: odr

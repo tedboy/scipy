@@ -1,0 +1,6 @@
+scipy.linalg.lapack.dpbtrs
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: dpbtrs

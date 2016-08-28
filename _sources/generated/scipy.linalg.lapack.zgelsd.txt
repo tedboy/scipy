@@ -1,0 +1,6 @@
+scipy.linalg.lapack.zgelsd
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: zgelsd

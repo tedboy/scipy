@@ -1,0 +1,6 @@
+scipy.linalg.lapack.zposv
+=========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: zposv

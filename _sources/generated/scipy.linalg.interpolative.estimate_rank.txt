@@ -1,0 +1,6 @@
+scipy.linalg.interpolative.estimate_rank
+========================================
+
+.. currentmodule:: scipy.linalg.interpolative
+
+.. autofunction:: estimate_rank

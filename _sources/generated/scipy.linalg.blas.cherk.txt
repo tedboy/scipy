@@ -1,0 +1,6 @@
+scipy.linalg.blas.cherk
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: cherk

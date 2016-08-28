@@ -1,0 +1,6 @@
+scipy.stats.dirichlet
+=====================
+
+.. currentmodule:: scipy.stats
+
+.. autodata:: dirichlet

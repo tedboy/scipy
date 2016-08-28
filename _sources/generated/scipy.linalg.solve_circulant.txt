@@ -1,0 +1,6 @@
+scipy.linalg.solve_circulant
+============================
+
+.. currentmodule:: scipy.linalg
+
+.. autofunction:: solve_circulant

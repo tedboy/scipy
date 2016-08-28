@@ -1,0 +1,6 @@
+scipy.special.ellip_harm_2
+==========================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: ellip_harm_2

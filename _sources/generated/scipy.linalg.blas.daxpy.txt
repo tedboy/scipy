@@ -1,0 +1,6 @@
+scipy.linalg.blas.daxpy
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: daxpy

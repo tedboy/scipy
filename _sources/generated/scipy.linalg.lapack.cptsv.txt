@@ -1,0 +1,6 @@
+scipy.linalg.lapack.cptsv
+=========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: cptsv

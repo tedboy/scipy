@@ -1,0 +1,6 @@
+scipy.linalg.blas.scasum
+========================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: scasum

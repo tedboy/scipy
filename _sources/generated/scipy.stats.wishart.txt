@@ -1,0 +1,6 @@
+scipy.stats.wishart
+===================
+
+.. currentmodule:: scipy.stats
+
+.. autodata:: wishart

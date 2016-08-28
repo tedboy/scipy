@@ -1,0 +1,6 @@
+scipy.linalg.lapack.sgeev_lwork
+===============================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: sgeev_lwork

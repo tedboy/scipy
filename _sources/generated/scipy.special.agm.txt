@@ -1,0 +1,6 @@
+scipy.special.agm
+=================
+
+.. currentmodule:: scipy.special
+
+.. autofunction:: agm

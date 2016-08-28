@@ -1,0 +1,41 @@
+scipy.signal.lti
+================
+
+.. currentmodule:: scipy.signal
+
+.. autoclass:: lti
+
+   
+   .. automethod:: __init__
+
+   
+   .. rubric:: Methods
+
+   .. autosummary::
+   
+      ~lti.__init__
+      ~lti.bode
+      ~lti.freqresp
+      ~lti.impulse
+      ~lti.output
+      ~lti.step
+   
+   
+
+   
+   
+   .. rubric:: Attributes
+
+   .. autosummary::
+   
+      ~lti.A
+      ~lti.B
+      ~lti.C
+      ~lti.D
+      ~lti.den
+      ~lti.gain
+      ~lti.num
+      ~lti.poles
+      ~lti.zeros
+   
+   

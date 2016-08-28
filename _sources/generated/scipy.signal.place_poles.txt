@@ -1,0 +1,6 @@
+scipy.signal.place_poles
+========================
+
+.. currentmodule:: scipy.signal
+
+.. autofunction:: place_poles

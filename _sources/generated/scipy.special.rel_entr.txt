@@ -1,0 +1,6 @@
+scipy.special.rel_entr
+======================
+
+.. currentmodule:: scipy.special
+
+.. autodata:: rel_entr

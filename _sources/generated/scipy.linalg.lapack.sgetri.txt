@@ -1,0 +1,6 @@
+scipy.linalg.lapack.sgetri
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: sgetri

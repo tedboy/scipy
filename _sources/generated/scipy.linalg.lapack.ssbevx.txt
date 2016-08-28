@@ -1,0 +1,6 @@
+scipy.linalg.lapack.ssbevx
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: ssbevx

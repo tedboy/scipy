@@ -1,0 +1,6 @@
+scipy.linalg.blas.ssymv
+=======================
+
+.. currentmodule:: scipy.linalg.blas
+
+.. autodata:: ssymv

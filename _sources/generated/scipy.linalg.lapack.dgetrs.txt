@@ -1,0 +1,6 @@
+scipy.linalg.lapack.dgetrs
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: dgetrs

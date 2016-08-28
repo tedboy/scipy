@@ -1,0 +1,6 @@
+scipy.linalg.lapack.cgebal
+==========================
+
+.. currentmodule:: scipy.linalg.lapack
+
+.. autodata:: cgebal
