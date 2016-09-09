@@ -1,0 +1,1729 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3. API (c-i)</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="" href="index.html"/>
+        <link rel="next" title="3.1. scipy.cluster" href="cluster.html"/>
+        <link rel="prev" title="2. API - importing from Scipy" href="API.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Scipy API
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <p class="caption"><span class="caption-text">Table of Contents</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="tutorial/index.html">1. SciPy Tutorial</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/general.html">1.1. Introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/general.html#scipy-organization">1.1.1. SciPy Organization</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/general.html#finding-documentation">1.1.2. Finding Documentation</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/basic.html">1.2. Basic functions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/basic.html#interaction-with-numpy">1.2.1. Interaction with Numpy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/basic.html#index-tricks">1.2.1.1. Index Tricks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/basic.html#shape-manipulation">1.2.1.2. Shape manipulation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/basic.html#polynomials">1.2.1.3. Polynomials</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/basic.html#vectorizing-functions-vectorize">1.2.1.4. Vectorizing functions (vectorize)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/basic.html#type-handling">1.2.1.5. Type handling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/basic.html#other-useful-functions">1.2.1.6. Other useful functions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/special.html">1.3. Special functions (<code class="docutils literal"><span class="pre">scipy.special</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/special.html#bessel-functions-of-real-order-jn-jn-zeros">1.3.1. Bessel functions of real order(<code class="docutils literal"><span class="pre">jn()</span></code>, <code class="docutils literal"><span class="pre">jn_zeros()</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/integrate.html">1.4. Integration (<code class="docutils literal"><span class="pre">scipy.integrate</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/integrate.html#general-integration-quad">1.4.1. General integration (<code class="docutils literal"><span class="pre">quad()</span></code>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/integrate.html#general-multiple-integration-dblquad-tplquad-nquad">1.4.2. General multiple integration (<code class="docutils literal"><span class="pre">dblquad()</span></code>, <code class="docutils literal"><span class="pre">tplquad()</span></code>, <code class="docutils literal"><span class="pre">nquad()</span></code>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/integrate.html#gaussian-quadrature">1.4.3. Gaussian quadrature</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/integrate.html#romberg-integration">1.4.4. Romberg Integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/integrate.html#integrating-using-samples">1.4.5. Integrating using Samples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/integrate.html#faster-integration-using-ctypes">1.4.6. Faster integration using Ctypes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/integrate.html#ordinary-differential-equations-odeint">1.4.7. Ordinary differential equations (<code class="docutils literal"><span class="pre">odeint()</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/integrate.html#references">1.4.7.1. References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/optimize.html">1.5. Optimization (<code class="docutils literal"><span class="pre">scipy.optimize</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/optimize.html#unconstrained-minimization-of-multivariate-scalar-functions-minimize">1.5.1. Unconstrained minimization of multivariate scalar functions (<code class="docutils literal"><span class="pre">minimize()</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/optimize.html#nelder-mead-simplex-algorithm-method-nelder-mead">1.5.1.1. Nelder-Mead Simplex algorithm (<code class="docutils literal"><span class="pre">method='Nelder-Mead'</span></code>)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/optimize.html#broyden-fletcher-goldfarb-shanno-algorithm-method-bfgs">1.5.1.2. Broyden-Fletcher-Goldfarb-Shanno algorithm (<code class="docutils literal"><span class="pre">method='BFGS'</span></code>)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/optimize.html#newton-conjugate-gradient-algorithm-method-newton-cg">1.5.1.3. Newton-Conjugate-Gradient algorithm (<code class="docutils literal"><span class="pre">method='Newton-CG'</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/optimize.html#constrained-minimization-of-multivariate-scalar-functions-minimize">1.5.2. Constrained minimization of multivariate scalar functions (<code class="docutils literal"><span class="pre">minimize()</span></code>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/optimize.html#least-squares-minimization-least-squares">1.5.3. Least-squares minimization (<code class="docutils literal"><span class="pre">least_squares()</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/optimize.html#example-of-solving-a-fitting-problem">1.5.3.1. Example of solving a fitting problem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/optimize.html#further-examples">1.5.3.2. Further examples</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/optimize.html#univariate-function-minimizers-minimize-scalar">1.5.4. Univariate function minimizers (<code class="docutils literal"><span class="pre">minimize_scalar()</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/optimize.html#unconstrained-minimization-method-brent">1.5.4.1. Unconstrained minimization (<code class="docutils literal"><span class="pre">method='brent'</span></code>)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/optimize.html#bounded-minimization-method-bounded">1.5.4.2. Bounded minimization (<code class="docutils literal"><span class="pre">method='bounded'</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/optimize.html#custom-minimizers">1.5.5. Custom minimizers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/optimize.html#root-finding">1.5.6. Root finding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/optimize.html#scalar-functions">1.5.6.1. Scalar functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/optimize.html#fixed-point-solving">1.5.6.2. Fixed-point solving</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/optimize.html#sets-of-equations">1.5.6.3. Sets of equations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/optimize.html#root-finding-for-large-problems">1.5.6.4. Root finding for large problems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/optimize.html#still-too-slow-preconditioning">1.5.6.5. Still too slow? Preconditioning.</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/interpolate.html">1.6. Interpolation (<code class="docutils literal"><span class="pre">scipy.interpolate</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/interpolate.html#d-interpolation-interp1d">1.6.1. 1-D interpolation (<code class="docutils literal"><span class="pre">interp1d</span></code>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/interpolate.html#multivariate-data-interpolation-griddata">1.6.2. Multivariate data interpolation (<code class="docutils literal"><span class="pre">griddata()</span></code>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/interpolate.html#spline-interpolation">1.6.3. Spline interpolation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/interpolate.html#spline-interpolation-in-1-d-procedural-interpolate-splxxx">1.6.3.1. Spline interpolation in 1-d: Procedural (interpolate.splXXX)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/interpolate.html#spline-interpolation-in-1-d-object-oriented-univariatespline">1.6.3.2. Spline interpolation in 1-d: Object-oriented (<code class="docutils literal"><span class="pre">UnivariateSpline</span></code>)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/interpolate.html#two-dimensional-spline-representation-procedural-bisplrep">1.6.3.3. Two-dimensional spline representation: Procedural (<code class="docutils literal"><span class="pre">bisplrep()</span></code>)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/interpolate.html#two-dimensional-spline-representation-object-oriented-bivariatespline">1.6.3.4. Two-dimensional spline representation: Object-oriented (<code class="docutils literal"><span class="pre">BivariateSpline</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/interpolate.html#using-radial-basis-functions-for-smoothing-interpolation">1.6.4. Using radial basis functions for smoothing/interpolation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/interpolate.html#d-example">1.6.4.1. 1-d Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/interpolate.html#id1">1.6.4.2. 2-d Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/fftpack.html">1.7. Fourier Transforms (<code class="docutils literal"><span class="pre">scipy.fftpack</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/fftpack.html#fast-fourier-transforms">1.7.1. Fast Fourier transforms</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/fftpack.html#one-dimensional-discrete-fourier-transforms">1.7.1.1. One dimensional discrete Fourier transforms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/fftpack.html#two-and-n-dimensional-discrete-fourier-transforms">1.7.1.2. Two and n-dimensional discrete Fourier transforms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/fftpack.html#fft-convolution">1.7.1.3. FFT convolution</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/fftpack.html#discrete-cosine-transforms">1.7.2. Discrete Cosine Transforms</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/fftpack.html#type-i-dct">1.7.2.1. Type I DCT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/fftpack.html#type-ii-dct">1.7.2.2. Type II DCT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/fftpack.html#type-iii-dct">1.7.2.3. Type III DCT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/fftpack.html#dct-and-idct">1.7.2.4. DCT and IDCT</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/fftpack.html#example">1.7.2.5. Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/fftpack.html#discrete-sine-transforms">1.7.3. Discrete Sine Transforms</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/fftpack.html#type-i-dst">1.7.3.1. Type I DST</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/fftpack.html#type-ii-dst">1.7.3.2. Type II DST</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/fftpack.html#type-iii-dst">1.7.3.3. Type III DST</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/fftpack.html#dst-and-idst">1.7.3.4. DST and IDST</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/fftpack.html#cache-destruction">1.7.4. Cache Destruction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/fftpack.html#references">1.7.5. References</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/signal.html">1.8. Signal Processing (<cite>scipy.signal</cite>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/signal.html#b-splines">1.8.1. B-splines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/signal.html#filtering">1.8.2. Filtering</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/signal.html#convolution-correlation">1.8.2.1. Convolution/Correlation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/signal.html#difference-equation-filtering">1.8.2.2. Difference-equation filtering</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/signal.html#filter-design">1.8.2.3. Filter Design</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/signal.html#other-filters">1.8.2.4. Other filters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/signal.html#analog-filter-design">1.8.2.5. Analog Filter Design</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/signal.html#spectral-analysis">1.8.3. Spectral Analysis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/signal.html#periodogram-measurements">1.8.3.1. Periodogram Measurements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/signal.html#spectral-analysis-using-welch-s-method">1.8.3.2. Spectral Analysis using Welch&#8217;s Method</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/signal.html#lomb-scargle-periodograms-lombscargle">1.8.3.3. Lomb-Scargle Periodograms (<code class="docutils literal"><span class="pre">lombscargle()</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/signal.html#detrend">1.8.4. Detrend</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/linalg.html">1.9. Linear Algebra (<cite>scipy.linalg</cite>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/linalg.html#scipy-linalg-vs-numpy-linalg">1.9.1. scipy.linalg vs numpy.linalg</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/linalg.html#numpy-matrix-vs-2d-numpy-ndarray">1.9.2. numpy.matrix vs 2D numpy.ndarray</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/linalg.html#basic-routines">1.9.3. Basic routines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#finding-inverse">1.9.3.1. Finding Inverse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#solving-linear-system">1.9.3.2. Solving linear system</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#finding-determinant">1.9.3.3. Finding Determinant</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#computing-norms">1.9.3.4. Computing norms</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#solving-linear-least-squares-problems-and-pseudo-inverses">1.9.3.5. Solving linear least-squares problems and pseudo-inverses</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#generalized-inverse">1.9.3.6. Generalized inverse</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/linalg.html#decompositions">1.9.4. Decompositions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#eigenvalues-and-eigenvectors">1.9.4.1. Eigenvalues and eigenvectors</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#singular-value-decomposition">1.9.4.2. Singular value decomposition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#lu-decomposition">1.9.4.3. LU decomposition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#cholesky-decomposition">1.9.4.4. Cholesky decomposition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#qr-decomposition">1.9.4.5. QR decomposition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#schur-decomposition">1.9.4.6. Schur decomposition</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#interpolative-decomposition">1.9.4.7. Interpolative Decomposition</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/linalg.html#matrix-functions">1.9.5. Matrix Functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#exponential-and-logarithm-functions">1.9.5.1. Exponential and logarithm functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#trigonometric-functions">1.9.5.2. Trigonometric functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#hyperbolic-trigonometric-functions">1.9.5.3. Hyperbolic trigonometric functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/linalg.html#arbitrary-function">1.9.5.4. Arbitrary function</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/linalg.html#special-matrices">1.9.6. Special matrices</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/arpack.html">1.10. Sparse Eigenvalue Problems with ARPACK</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/arpack.html#introduction">1.10.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/arpack.html#basic-functionality">1.10.2. Basic Functionality</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/arpack.html#shift-invert-mode">1.10.3. Shift-Invert Mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/arpack.html#examples">1.10.4. Examples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/arpack.html#references">1.10.5. References</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/csgraph.html">1.11. Compressed Sparse Graph Routines (<cite>scipy.sparse.csgraph</cite>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/csgraph.html#example-word-ladders">1.11.1. Example: Word Ladders</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/spatial.html">1.12. Spatial data structures and algorithms (<cite>scipy.spatial</cite>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/spatial.html#delaunay-triangulations">1.12.1. Delaunay triangulations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/spatial.html#coplanar-points">1.12.1.1. Coplanar points</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/spatial.html#convex-hulls">1.12.2. Convex hulls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/spatial.html#voronoi-diagrams">1.12.3. Voronoi diagrams</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/stats.html">1.13. Statistics (<cite>scipy.stats</cite>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/stats.html#introduction">1.13.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/stats.html#random-variables">1.13.2. Random Variables</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#getting-help">1.13.2.1. Getting Help</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#common-methods">1.13.2.2. Common Methods</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#shifting-and-scaling">1.13.2.3. Shifting and Scaling</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#shape-parameters">1.13.2.4. Shape Parameters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#freezing-a-distribution">1.13.2.5. Freezing a Distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#broadcasting">1.13.2.6. Broadcasting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#specific-points-for-discrete-distributions">1.13.2.7. Specific Points for Discrete Distributions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#fitting-distributions">1.13.2.8. Fitting Distributions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#performance-issues-and-cautionary-remarks">1.13.2.9. Performance Issues and Cautionary Remarks</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#remaining-issues">1.13.2.10. Remaining Issues</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/stats.html#building-specific-distributions">1.13.3. Building Specific Distributions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#making-a-continuous-distribution-i-e-subclassing-rv-continuous">1.13.3.1. Making a Continuous Distribution, i.e., Subclassing <code class="docutils literal"><span class="pre">rv_continuous</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#subclassing-rv-discrete">1.13.3.2. Subclassing <code class="docutils literal"><span class="pre">rv_discrete</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/stats.html#analysing-one-sample">1.13.4. Analysing One Sample</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#descriptive-statistics">1.13.4.1. Descriptive Statistics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#t-test-and-ks-test">1.13.4.2. T-test and KS-test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#tails-of-the-distribution">1.13.4.3. Tails of the distribution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#special-tests-for-normal-distributions">1.13.4.4. Special tests for normal distributions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/stats.html#comparing-two-samples">1.13.5. Comparing two samples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#comparing-means">1.13.5.1. Comparing means</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#kolmogorov-smirnov-test-for-two-samples-ks-2samp">1.13.5.2. Kolmogorov-Smirnov test for two samples ks_2samp</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/stats.html#kernel-density-estimation">1.13.6. Kernel Density Estimation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#univariate-estimation">1.13.6.1. Univariate estimation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/stats.html#multivariate-estimation">1.13.6.2. Multivariate estimation</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/ndimage.html">1.14. Multidimensional image processing (<cite>scipy.ndimage</cite>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/ndimage.html#introduction">1.14.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/ndimage.html#properties-shared-by-all-functions">1.14.2. Properties shared by all functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/ndimage.html#filter-functions">1.14.3. Filter functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/ndimage.html#correlation-and-convolution">1.14.3.1. Correlation and convolution</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/ndimage.html#smoothing-filters">1.14.3.2. Smoothing filters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/ndimage.html#filters-based-on-order-statistics">1.14.3.3. Filters based on order statistics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/ndimage.html#derivatives">1.14.3.4. Derivatives</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/ndimage.html#generic-filter-functions">1.14.3.5. Generic filter functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/ndimage.html#fourier-domain-filters">1.14.3.6. Fourier domain filters</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/ndimage.html#interpolation-functions">1.14.4. Interpolation functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/ndimage.html#spline-pre-filters">1.14.4.1. Spline pre-filters</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/ndimage.html#id8">1.14.4.2. Interpolation functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/ndimage.html#morphology">1.14.5. Morphology</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/ndimage.html#binary-morphology">1.14.5.1. Binary morphology</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/ndimage.html#grey-scale-morphology">1.14.5.2. Grey-scale morphology</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/ndimage.html#distance-transforms">1.14.6. Distance transforms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/ndimage.html#segmentation-and-labeling">1.14.7. Segmentation and labeling</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/ndimage.html#object-measurements">1.14.8. Object measurements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/ndimage.html#extending-scipy-ndimage-in-c">1.14.9. Extending <code class="docutils literal"><span class="pre">scipy.ndimage</span></code> in C</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/ndimage.html#functions-that-support-c-callback-functions">1.14.10. Functions that support C callback functions</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/io.html">1.15. File IO (<code class="docutils literal"><span class="pre">scipy.io</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/io.html#matlab-files">1.15.1. MATLAB files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/io.html#the-basic-functions">1.15.1.1. The basic functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/io.html#how-do-i-start">1.15.1.2. How do I start?</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/io.html#matlab-structs">1.15.1.3. MATLAB structs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/io.html#matlab-cell-arrays">1.15.1.4. MATLAB cell arrays</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/io.html#idl-files">1.15.2. IDL files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/io.html#matrix-market-files">1.15.3. Matrix Market files</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/io.html#module-scipy.io.wavfile">1.15.4. Wav sound files (<code class="docutils literal"><span class="pre">scipy.io.wavfile</span></code>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/io.html#module-scipy.io.arff">1.15.5. Arff files (<code class="docutils literal"><span class="pre">scipy.io.arff</span></code>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/io.html#module-scipy.io.netcdf">1.15.6. Netcdf (<code class="docutils literal"><span class="pre">scipy.io.netcdf</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="tutorial/weave.html">1.16. Weave (<cite>scipy.weave</cite>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/weave.html#outline">1.16.1. Outline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/weave.html#introduction">1.16.2. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/weave.html#requirements">1.16.3. Requirements</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/weave.html#installation">1.16.4. Installation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/weave.html#testing">1.16.5. Testing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#testing-notes">1.16.5.1. Testing Notes:</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/weave.html#benchmarks">1.16.6. Benchmarks</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/weave.html#inline">1.16.7. Inline</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#more-with-printf">1.16.7.1. More with printf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#more-examples">1.16.7.2. More examples</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#keyword-option">1.16.7.3. Keyword Option</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#inline-arguments">1.16.7.4. Inline Arguments</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#distutils-keywords">1.16.7.5. Distutils keywords</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#technical-details">1.16.7.6. Technical Details</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#passing-variables-in-out-of-the-c-c-code">1.16.7.7. Passing Variables in/out of the C/C++ code</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#type-conversions">1.16.7.8. Type Conversions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#the-catalog">1.16.7.9. The Catalog</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/weave.html#blitz">1.16.8. Blitz</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#id1">1.16.8.1. Requirements</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#limitations">1.16.8.2. Limitations</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#numpy-efficiency-issues-what-compilation-buys-you">1.16.8.3. NumPy efficiency issues: What compilation buys you</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#the-tools">1.16.8.4. The Tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#type-definitions-and-coercion">1.16.8.5. Type definitions and coercion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#cataloging-compiled-functions">1.16.8.6. Cataloging Compiled Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#checking-array-sizes">1.16.8.7. Checking Array Sizes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#creating-the-extension-module">1.16.8.8. Creating the Extension Module</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/weave.html#extension-modules">1.16.9. Extension Modules</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#a-simple-example">1.16.9.1. A Simple Example</a></li>
+<li class="toctree-l4"><a class="reference internal" href="tutorial/weave.html#fibonacci-example">1.16.9.2. Fibonacci Example</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/weave.html#customizing-type-conversions-type-factories">1.16.10. Customizing Type Conversions &#8211; Type Factories</a></li>
+<li class="toctree-l3"><a class="reference internal" href="tutorial/weave.html#things-i-wish-weave-did">1.16.11. Things I wish <code class="docutils literal"><span class="pre">weave</span></code> did</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="API.html">2. API - importing from Scipy</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="API.html#guidelines-for-importing-functions-from-scipy">2.1. Guidelines for importing functions from Scipy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="API.html#api-definition">2.2. API definition</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="">3. API (<code class="docutils literal"><span class="pre">c-i</span></code>)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="cluster.html">3.1. <code class="docutils literal"><span class="pre">scipy.cluster</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="cluster.html#clustering-package-scipy-cluster">3.1.1. Clustering package (<code class="docutils literal"><span class="pre">scipy.cluster</span></code>)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="cluster.vq.html">3.1.2. K-means clustering and vector quantization (<code class="docutils literal"><span class="pre">scipy.cluster.vq</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.vq.whiten.html">3.1.2.1. scipy.cluster.vq.whiten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.vq.vq.html">3.1.2.2. scipy.cluster.vq.vq</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.vq.kmeans.html">3.1.2.3. scipy.cluster.vq.kmeans</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.vq.kmeans2.html">3.1.2.4. scipy.cluster.vq.kmeans2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cluster.vq.html#background-information">3.1.2.5. Background information</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="cluster.hierarchy.html">3.1.3. Hierarchical clustering (<code class="docutils literal"><span class="pre">scipy.cluster.hierarchy</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.fcluster.html">3.1.3.1. scipy.cluster.hierarchy.fcluster</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.fclusterdata.html">3.1.3.2. scipy.cluster.hierarchy.fclusterdata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.leaders.html">3.1.3.3. scipy.cluster.hierarchy.leaders</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.linkage.html">3.1.3.4. scipy.cluster.hierarchy.linkage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.single.html">3.1.3.5. scipy.cluster.hierarchy.single</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.complete.html">3.1.3.6. scipy.cluster.hierarchy.complete</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.average.html">3.1.3.7. scipy.cluster.hierarchy.average</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.weighted.html">3.1.3.8. scipy.cluster.hierarchy.weighted</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.centroid.html">3.1.3.9. scipy.cluster.hierarchy.centroid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.median.html">3.1.3.10. scipy.cluster.hierarchy.median</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.ward.html">3.1.3.11. scipy.cluster.hierarchy.ward</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.cophenet.html">3.1.3.12. scipy.cluster.hierarchy.cophenet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.from_mlab_linkage.html">3.1.3.13. scipy.cluster.hierarchy.from_mlab_linkage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.inconsistent.html">3.1.3.14. scipy.cluster.hierarchy.inconsistent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.maxinconsts.html">3.1.3.15. scipy.cluster.hierarchy.maxinconsts</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.maxdists.html">3.1.3.16. scipy.cluster.hierarchy.maxdists</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.maxRstat.html">3.1.3.17. scipy.cluster.hierarchy.maxRstat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.to_mlab_linkage.html">3.1.3.18. scipy.cluster.hierarchy.to_mlab_linkage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.dendrogram.html">3.1.3.19. scipy.cluster.hierarchy.dendrogram</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.ClusterNode.html">3.1.3.20. scipy.cluster.hierarchy.ClusterNode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.leaves_list.html">3.1.3.21. scipy.cluster.hierarchy.leaves_list</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.to_tree.html">3.1.3.22. scipy.cluster.hierarchy.to_tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.cut_tree.html">3.1.3.23. scipy.cluster.hierarchy.cut_tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.is_valid_im.html">3.1.3.24. scipy.cluster.hierarchy.is_valid_im</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.is_valid_linkage.html">3.1.3.25. scipy.cluster.hierarchy.is_valid_linkage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.is_isomorphic.html">3.1.3.26. scipy.cluster.hierarchy.is_isomorphic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.is_monotonic.html">3.1.3.27. scipy.cluster.hierarchy.is_monotonic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.correspond.html">3.1.3.28. scipy.cluster.hierarchy.correspond</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.num_obs_linkage.html">3.1.3.29. scipy.cluster.hierarchy.num_obs_linkage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.cluster.hierarchy.set_link_color_palette.html">3.1.3.30. scipy.cluster.hierarchy.set_link_color_palette</a></li>
+<li class="toctree-l4"><a class="reference internal" href="cluster.hierarchy.html#references">3.1.3.31. References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="constants.html">3.2. Constants (<code class="docutils literal"><span class="pre">scipy.constants</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="constants.html#mathematical-constants">3.2.1. Mathematical constants</a></li>
+<li class="toctree-l3"><a class="reference internal" href="constants.html#physical-constants">3.2.2. Physical constants</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#constants-database">3.2.2.1. Constants database</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="constants.html#units">3.2.3. Units</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#si-prefixes">3.2.3.1. SI prefixes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#binary-prefixes">3.2.3.2. Binary prefixes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#weight">3.2.3.3. Weight</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#angle">3.2.3.4. Angle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#time">3.2.3.5. Time</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#length">3.2.3.6. Length</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#pressure">3.2.3.7. Pressure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#area">3.2.3.8. Area</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#volume">3.2.3.9. Volume</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#speed">3.2.3.10. Speed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#temperature">3.2.3.11. Temperature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#energy">3.2.3.12. Energy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#power">3.2.3.13. Power</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#force">3.2.3.14. Force</a></li>
+<li class="toctree-l4"><a class="reference internal" href="constants.html#optics">3.2.3.15. Optics</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="constants.html#references">3.2.4. References</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="fftpack.html">3.3. Discrete Fourier transforms (<code class="docutils literal"><span class="pre">scipy.fftpack</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="fftpack.html#fast-fourier-transforms-ffts">3.3.1. Fast Fourier Transforms (FFTs)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.fft.html">3.3.1.1. scipy.fftpack.fft</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.ifft.html">3.3.1.2. scipy.fftpack.ifft</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.fft2.html">3.3.1.3. scipy.fftpack.fft2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.ifft2.html">3.3.1.4. scipy.fftpack.ifft2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.fftn.html">3.3.1.5. scipy.fftpack.fftn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.ifftn.html">3.3.1.6. scipy.fftpack.ifftn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.rfft.html">3.3.1.7. scipy.fftpack.rfft</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.irfft.html">3.3.1.8. scipy.fftpack.irfft</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.dct.html">3.3.1.9. scipy.fftpack.dct</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.idct.html">3.3.1.10. scipy.fftpack.idct</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.dst.html">3.3.1.11. scipy.fftpack.dst</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.idst.html">3.3.1.12. scipy.fftpack.idst</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="fftpack.html#differential-and-pseudo-differential-operators">3.3.2. Differential and pseudo-differential operators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.diff.html">3.3.2.1. scipy.fftpack.diff</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.tilbert.html">3.3.2.2. scipy.fftpack.tilbert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.itilbert.html">3.3.2.3. scipy.fftpack.itilbert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.hilbert.html">3.3.2.4. scipy.fftpack.hilbert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.ihilbert.html">3.3.2.5. scipy.fftpack.ihilbert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.cs_diff.html">3.3.2.6. scipy.fftpack.cs_diff</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.sc_diff.html">3.3.2.7. scipy.fftpack.sc_diff</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.ss_diff.html">3.3.2.8. scipy.fftpack.ss_diff</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.cc_diff.html">3.3.2.9. scipy.fftpack.cc_diff</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.shift.html">3.3.2.10. scipy.fftpack.shift</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="fftpack.html#helper-functions">3.3.3. Helper functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.fftshift.html">3.3.3.1. scipy.fftpack.fftshift</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.ifftshift.html">3.3.3.2. scipy.fftpack.ifftshift</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.fftfreq.html">3.3.3.3. scipy.fftpack.fftfreq</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.rfftfreq.html">3.3.3.4. scipy.fftpack.rfftfreq</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="fftpack.html#module-scipy.fftpack.convolve">3.3.4. Convolutions (<code class="docutils literal"><span class="pre">scipy.fftpack.convolve</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.convolve.convolve.html">3.3.4.1. scipy.fftpack.convolve.convolve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.convolve.convolve_z.html">3.3.4.2. scipy.fftpack.convolve.convolve_z</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.convolve.init_convolution_kernel.html">3.3.4.3. scipy.fftpack.convolve.init_convolution_kernel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.fftpack.convolve.destroy_convolve_cache.html">3.3.4.4. scipy.fftpack.convolve.destroy_convolve_cache</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="integrate.html">3.4. Integration and ODEs (<code class="docutils literal"><span class="pre">scipy.integrate</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="integrate.html#integrating-functions-given-function-object">3.4.1. Integrating functions, given function object</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.quad.html">3.4.1.1. scipy.integrate.quad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.dblquad.html">3.4.1.2. scipy.integrate.dblquad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.tplquad.html">3.4.1.3. scipy.integrate.tplquad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.nquad.html">3.4.1.4. scipy.integrate.nquad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.fixed_quad.html">3.4.1.5. scipy.integrate.fixed_quad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.quadrature.html">3.4.1.6. scipy.integrate.quadrature</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.romberg.html">3.4.1.7. scipy.integrate.romberg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.quad_explain.html">3.4.1.8. scipy.integrate.quad_explain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.newton_cotes.html">3.4.1.9. scipy.integrate.newton_cotes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.IntegrationWarning.html">3.4.1.10. scipy.integrate.IntegrationWarning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="integrate.html#integrating-functions-given-fixed-samples">3.4.2. Integrating functions, given fixed samples</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.trapz.html">3.4.2.1. scipy.integrate.trapz</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.cumtrapz.html">3.4.2.2. scipy.integrate.cumtrapz</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.simps.html">3.4.2.3. scipy.integrate.simps</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.romb.html">3.4.2.4. scipy.integrate.romb</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="integrate.html#integrators-of-ode-systems">3.4.3. Integrators of ODE systems</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.odeint.html">3.4.3.1. scipy.integrate.odeint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.ode.html">3.4.3.2. scipy.integrate.ode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.integrate.complex_ode.html">3.4.3.3. scipy.integrate.complex_ode</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="interpolate.html">3.5. Interpolation (<code class="docutils literal"><span class="pre">scipy.interpolate</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="interpolate.html#univariate-interpolation">3.5.1. Univariate interpolation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.interp1d.html">3.5.1.1. scipy.interpolate.interp1d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.BarycentricInterpolator.html">3.5.1.2. scipy.interpolate.BarycentricInterpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.KroghInterpolator.html">3.5.1.3. scipy.interpolate.KroghInterpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.PiecewisePolynomial.html">3.5.1.4. scipy.interpolate.PiecewisePolynomial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.PchipInterpolator.html">3.5.1.5. scipy.interpolate.PchipInterpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.barycentric_interpolate.html">3.5.1.6. scipy.interpolate.barycentric_interpolate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.krogh_interpolate.html">3.5.1.7. scipy.interpolate.krogh_interpolate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.piecewise_polynomial_interpolate.html">3.5.1.8. scipy.interpolate.piecewise_polynomial_interpolate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.pchip_interpolate.html">3.5.1.9. scipy.interpolate.pchip_interpolate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.Akima1DInterpolator.html">3.5.1.10. scipy.interpolate.Akima1DInterpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.PPoly.html">3.5.1.11. scipy.interpolate.PPoly</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.BPoly.html">3.5.1.12. scipy.interpolate.BPoly</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="interpolate.html#multivariate-interpolation">3.5.2. Multivariate interpolation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.griddata.html">3.5.2.1. scipy.interpolate.griddata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.LinearNDInterpolator.html">3.5.2.2. scipy.interpolate.LinearNDInterpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.NearestNDInterpolator.html">3.5.2.3. scipy.interpolate.NearestNDInterpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.CloughTocher2DInterpolator.html">3.5.2.4. scipy.interpolate.CloughTocher2DInterpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.Rbf.html">3.5.2.5. scipy.interpolate.Rbf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.interp2d.html">3.5.2.6. scipy.interpolate.interp2d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.interpn.html">3.5.2.7. scipy.interpolate.interpn</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.RegularGridInterpolator.html">3.5.2.8. scipy.interpolate.RegularGridInterpolator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.RectBivariateSpline.html">3.5.2.9. scipy.interpolate.RectBivariateSpline</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="interpolate.html#d-splines">3.5.3. 1-D Splines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.UnivariateSpline.html">3.5.3.1. scipy.interpolate.UnivariateSpline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.InterpolatedUnivariateSpline.html">3.5.3.2. scipy.interpolate.InterpolatedUnivariateSpline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.LSQUnivariateSpline.html">3.5.3.3. scipy.interpolate.LSQUnivariateSpline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.splrep.html">3.5.3.4. scipy.interpolate.splrep</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.splprep.html">3.5.3.5. scipy.interpolate.splprep</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.splev.html">3.5.3.6. scipy.interpolate.splev</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.splint.html">3.5.3.7. scipy.interpolate.splint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.sproot.html">3.5.3.8. scipy.interpolate.sproot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.spalde.html">3.5.3.9. scipy.interpolate.spalde</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.splder.html">3.5.3.10. scipy.interpolate.splder</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.splantider.html">3.5.3.11. scipy.interpolate.splantider</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.insert.html">3.5.3.12. scipy.interpolate.insert</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="interpolate.html#id1">3.5.4. 2-D Splines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.RectBivariateSpline.html">3.5.2.9. scipy.interpolate.RectBivariateSpline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.RectSphereBivariateSpline.html">3.5.4.1. scipy.interpolate.RectSphereBivariateSpline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.BivariateSpline.html">3.5.4.2. scipy.interpolate.BivariateSpline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.SmoothBivariateSpline.html">3.5.4.3. scipy.interpolate.SmoothBivariateSpline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.SmoothSphereBivariateSpline.html">3.5.4.4. scipy.interpolate.SmoothSphereBivariateSpline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.LSQBivariateSpline.html">3.5.4.5. scipy.interpolate.LSQBivariateSpline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.LSQSphereBivariateSpline.html">3.5.4.6. scipy.interpolate.LSQSphereBivariateSpline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.bisplrep.html">3.5.4.7. scipy.interpolate.bisplrep</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.bisplev.html">3.5.4.8. scipy.interpolate.bisplev</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="interpolate.html#additional-tools">3.5.5. Additional tools</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.lagrange.html">3.5.5.1. scipy.interpolate.lagrange</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.approximate_taylor_polynomial.html">3.5.5.2. scipy.interpolate.approximate_taylor_polynomial</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.ppform.html">3.5.5.3. scipy.interpolate.ppform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.spleval.html">3.5.5.4. scipy.interpolate.spleval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.spline.html">3.5.5.5. scipy.interpolate.spline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.splmake.html">3.5.5.6. scipy.interpolate.splmake</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.spltopp.html">3.5.5.7. scipy.interpolate.spltopp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.interpolate.pchip.html">3.5.5.8. scipy.interpolate.pchip</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="io.html">3.6. Input and output (<code class="docutils literal"><span class="pre">scipy.io</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="io.html#matlab-files">3.6.1. MATLAB® files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.loadmat.html">3.6.1.1. scipy.io.loadmat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.savemat.html">3.6.1.2. scipy.io.savemat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.whosmat.html">3.6.1.3. scipy.io.whosmat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="io.html#idl-files">3.6.2. IDL® files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.readsav.html">3.6.2.1. scipy.io.readsav</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="io.html#matrix-market-files">3.6.3. Matrix Market files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.mminfo.html">3.6.3.1. scipy.io.mminfo</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.mmread.html">3.6.3.2. scipy.io.mmread</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.mmwrite.html">3.6.3.3. scipy.io.mmwrite</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="io.html#unformatted-fortran-files">3.6.4. Unformatted Fortran files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.FortranFile.html">3.6.4.1. scipy.io.FortranFile</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="io.html#netcdf">3.6.5. Netcdf</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.netcdf_file.html">3.6.5.1. scipy.io.netcdf_file</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.netcdf_variable.html">3.6.5.2. scipy.io.netcdf_variable</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="io.html#harwell-boeing-files">3.6.6. Harwell-Boeing files</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.hb_read.html">3.6.6.1. scipy.io.hb_read</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.hb_write.html">3.6.6.2. scipy.io.hb_write</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="io.html#module-scipy.io.wavfile">3.6.7. Wav sound files (<code class="docutils literal"><span class="pre">scipy.io.wavfile</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.wavfile.read.html">3.6.7.1. scipy.io.wavfile.read</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.wavfile.write.html">3.6.7.2. scipy.io.wavfile.write</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.wavfile.WavFileWarning.html">3.6.7.3. scipy.io.wavfile.WavFileWarning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="io.html#module-scipy.io.arff">3.6.8. Arff files (<code class="docutils literal"><span class="pre">scipy.io.arff</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.arff.loadarff.html">3.6.8.1. scipy.io.arff.loadarff</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.arff.MetaData.html">3.6.8.2. scipy.io.arff.MetaData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.arff.ArffError.html">3.6.8.3. scipy.io.arff.ArffError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.io.arff.ParseArffError.html">3.6.8.4. scipy.io.arff.ParseArffError</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_l_to_o.html">4. API (<code class="docutils literal"><span class="pre">l-o</span></code>)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="linalg.html">4.1. Linear Algebra scipy.linalg</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="linalg.html#id1">4.1.1. Linear algebra (<code class="docutils literal"><span class="pre">scipy.linalg</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linalg.html#basics">4.1.1.1. Basics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linalg.html#eigenvalue-problems">4.1.1.2. Eigenvalue Problems</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linalg.html#decompositions">4.1.1.3. Decompositions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linalg.html#matrix-functions">4.1.1.4. Matrix Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linalg.html#matrix-equation-solvers">4.1.1.5. Matrix Equation Solvers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linalg.html#special-matrices">4.1.1.6. Special Matrices</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linalg.html#low-level-routines">4.1.1.7. Low-level routines</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linalg.blas.html">4.1.2. Low-level BLAS functions (<code class="docutils literal"><span class="pre">scipy.linalg.blas</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linalg.blas.html#finding-functions">4.1.2.1. Finding functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linalg.blas.html#blas-level-1-functions">4.1.2.2. BLAS Level 1 functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linalg.blas.html#blas-level-2-functions">4.1.2.3. BLAS Level 2 functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linalg.blas.html#blas-level-3-functions">4.1.2.4. BLAS Level 3 functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linalg.lapack.html">4.1.3. Low-level LAPACK functions (<code class="docutils literal"><span class="pre">scipy.linalg.lapack</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linalg.lapack.html#finding-functions">4.1.3.1. Finding functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linalg.lapack.html#all-functions">4.1.3.2. All functions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="linalg.cython_blas.html">4.1.4. BLAS Functions for Cython</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linalg.cython_lapack.html">4.1.5. LAPACK functions for Cython</a></li>
+<li class="toctree-l3"><a class="reference internal" href="linalg.interpolative.html">4.1.6. Interpolative matrix decomposition (<code class="docutils literal"><span class="pre">scipy.linalg.interpolative</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="linalg.interpolative.html#routines">4.1.6.1. Routines</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linalg.interpolative.html#references">4.1.6.2. References</a></li>
+<li class="toctree-l4"><a class="reference internal" href="linalg.interpolative.html#tutorial">4.1.6.3. Tutorial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="misc.html">4.2. Miscellaneous routines (<code class="docutils literal"><span class="pre">scipy.misc</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.ascent.html">4.2.1. scipy.misc.ascent</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.bytescale.html">4.2.2. scipy.misc.bytescale</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.central_diff_weights.html">4.2.3. scipy.misc.central_diff_weights</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.comb.html">4.2.4. scipy.misc.comb</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.derivative.html">4.2.5. scipy.misc.derivative</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.face.html">4.2.6. scipy.misc.face</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.factorial.html">4.2.7. scipy.misc.factorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.factorial2.html">4.2.8. scipy.misc.factorial2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.factorialk.html">4.2.9. scipy.misc.factorialk</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.fromimage.html">4.2.10. scipy.misc.fromimage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.imfilter.html">4.2.11. scipy.misc.imfilter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.imread.html">4.2.12. scipy.misc.imread</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.imresize.html">4.2.13. scipy.misc.imresize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.imrotate.html">4.2.14. scipy.misc.imrotate</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.imsave.html">4.2.15. scipy.misc.imsave</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.imshow.html">4.2.16. scipy.misc.imshow</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.info.html">4.2.17. scipy.misc.info</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.lena.html">4.2.18. scipy.misc.lena</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.logsumexp.html">4.2.19. scipy.misc.logsumexp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.pade.html">4.2.20. scipy.misc.pade</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.toimage.html">4.2.21. scipy.misc.toimage</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.source.html">4.2.22. scipy.misc.source</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.misc.who.html">4.2.23. scipy.misc.who</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="ndimage.html">4.3. Multi-dimensional image processing (<code class="docutils literal"><span class="pre">scipy.ndimage</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ndimage.html#filters">4.3.1. Filters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.convolve.html">4.3.1.1. scipy.ndimage.convolve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.convolve1d.html">4.3.1.2. scipy.ndimage.convolve1d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.correlate.html">4.3.1.3. scipy.ndimage.correlate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.correlate1d.html">4.3.1.4. scipy.ndimage.correlate1d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.gaussian_filter.html">4.3.1.5. scipy.ndimage.gaussian_filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.gaussian_filter1d.html">4.3.1.6. scipy.ndimage.gaussian_filter1d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.gaussian_gradient_magnitude.html">4.3.1.7. scipy.ndimage.gaussian_gradient_magnitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.gaussian_laplace.html">4.3.1.8. scipy.ndimage.gaussian_laplace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.generic_filter.html">4.3.1.9. scipy.ndimage.generic_filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.generic_filter1d.html">4.3.1.10. scipy.ndimage.generic_filter1d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.generic_gradient_magnitude.html">4.3.1.11. scipy.ndimage.generic_gradient_magnitude</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.generic_laplace.html">4.3.1.12. scipy.ndimage.generic_laplace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.laplace.html">4.3.1.13. scipy.ndimage.laplace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.maximum_filter.html">4.3.1.14. scipy.ndimage.maximum_filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.maximum_filter1d.html">4.3.1.15. scipy.ndimage.maximum_filter1d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.median_filter.html">4.3.1.16. scipy.ndimage.median_filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.minimum_filter.html">4.3.1.17. scipy.ndimage.minimum_filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.minimum_filter1d.html">4.3.1.18. scipy.ndimage.minimum_filter1d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.percentile_filter.html">4.3.1.19. scipy.ndimage.percentile_filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.prewitt.html">4.3.1.20. scipy.ndimage.prewitt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.rank_filter.html">4.3.1.21. scipy.ndimage.rank_filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.sobel.html">4.3.1.22. scipy.ndimage.sobel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.uniform_filter.html">4.3.1.23. scipy.ndimage.uniform_filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.uniform_filter1d.html">4.3.1.24. scipy.ndimage.uniform_filter1d</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ndimage.html#fourier-filters">4.3.2. Fourier filters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.fourier_ellipsoid.html">4.3.2.1. scipy.ndimage.fourier_ellipsoid</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.fourier_gaussian.html">4.3.2.2. scipy.ndimage.fourier_gaussian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.fourier_shift.html">4.3.2.3. scipy.ndimage.fourier_shift</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.fourier_uniform.html">4.3.2.4. scipy.ndimage.fourier_uniform</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ndimage.html#interpolation">4.3.3. Interpolation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.affine_transform.html">4.3.3.1. scipy.ndimage.affine_transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.geometric_transform.html">4.3.3.2. scipy.ndimage.geometric_transform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.map_coordinates.html">4.3.3.3. scipy.ndimage.map_coordinates</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.rotate.html">4.3.3.4. scipy.ndimage.rotate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.shift.html">4.3.3.5. scipy.ndimage.shift</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.spline_filter.html">4.3.3.6. scipy.ndimage.spline_filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.spline_filter1d.html">4.3.3.7. scipy.ndimage.spline_filter1d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.zoom.html">4.3.3.8. scipy.ndimage.zoom</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ndimage.html#measurements">4.3.4. Measurements</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.center_of_mass.html">4.3.4.1. scipy.ndimage.center_of_mass</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.extrema.html">4.3.4.2. scipy.ndimage.extrema</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.find_objects.html">4.3.4.3. scipy.ndimage.find_objects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.histogram.html">4.3.4.4. scipy.ndimage.histogram</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.label.html">4.3.4.5. scipy.ndimage.label</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.labeled_comprehension.html">4.3.4.6. scipy.ndimage.labeled_comprehension</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.maximum.html">4.3.4.7. scipy.ndimage.maximum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.maximum_position.html">4.3.4.8. scipy.ndimage.maximum_position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.mean.html">4.3.4.9. scipy.ndimage.mean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.median.html">4.3.4.10. scipy.ndimage.median</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.minimum.html">4.3.4.11. scipy.ndimage.minimum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.minimum_position.html">4.3.4.12. scipy.ndimage.minimum_position</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.standard_deviation.html">4.3.4.13. scipy.ndimage.standard_deviation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.sum.html">4.3.4.14. scipy.ndimage.sum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.variance.html">4.3.4.15. scipy.ndimage.variance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.watershed_ift.html">4.3.4.16. scipy.ndimage.watershed_ift</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ndimage.html#morphology">4.3.5. Morphology</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.binary_closing.html">4.3.5.1. scipy.ndimage.binary_closing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.binary_dilation.html">4.3.5.2. scipy.ndimage.binary_dilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.binary_erosion.html">4.3.5.3. scipy.ndimage.binary_erosion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.binary_fill_holes.html">4.3.5.4. scipy.ndimage.binary_fill_holes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.binary_hit_or_miss.html">4.3.5.5. scipy.ndimage.binary_hit_or_miss</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.binary_opening.html">4.3.5.6. scipy.ndimage.binary_opening</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.binary_propagation.html">4.3.5.7. scipy.ndimage.binary_propagation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.black_tophat.html">4.3.5.8. scipy.ndimage.black_tophat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.distance_transform_bf.html">4.3.5.9. scipy.ndimage.distance_transform_bf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.distance_transform_cdt.html">4.3.5.10. scipy.ndimage.distance_transform_cdt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.distance_transform_edt.html">4.3.5.11. scipy.ndimage.distance_transform_edt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.generate_binary_structure.html">4.3.5.12. scipy.ndimage.generate_binary_structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.grey_closing.html">4.3.5.13. scipy.ndimage.grey_closing</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.grey_dilation.html">4.3.5.14. scipy.ndimage.grey_dilation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.grey_erosion.html">4.3.5.15. scipy.ndimage.grey_erosion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.grey_opening.html">4.3.5.16. scipy.ndimage.grey_opening</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.iterate_structure.html">4.3.5.17. scipy.ndimage.iterate_structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.morphological_gradient.html">4.3.5.18. scipy.ndimage.morphological_gradient</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.morphological_laplace.html">4.3.5.19. scipy.ndimage.morphological_laplace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.white_tophat.html">4.3.5.20. scipy.ndimage.white_tophat</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="ndimage.html#utility">4.3.6. Utility</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.ndimage.imread.html">4.3.6.1. scipy.ndimage.imread</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="odr.html">4.4. Orthogonal distance regression (<code class="docutils literal"><span class="pre">scipy.odr</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="odr.html#package-content">4.4.1. Package Content</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.odr.Data.html">4.4.1.1. scipy.odr.Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.odr.RealData.html">4.4.1.2. scipy.odr.RealData</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.odr.Model.html">4.4.1.3. scipy.odr.Model</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.odr.ODR.html">4.4.1.4. scipy.odr.ODR</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.odr.Output.html">4.4.1.5. scipy.odr.Output</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.odr.odr.html">4.4.1.6. scipy.odr.odr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.odr.odr_error.html">4.4.1.7. scipy.odr.odr_error</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.odr.odr_stop.html">4.4.1.8. scipy.odr.odr_stop</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.odr.polynomial.html">4.4.1.9. scipy.odr.polynomial</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="odr.html#usage-information">4.4.2. Usage information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="odr.html#introduction">4.4.2.1. Introduction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="odr.html#basic-usage">4.4.2.2. Basic usage</a></li>
+<li class="toctree-l4"><a class="reference internal" href="odr.html#references">4.4.2.3. References</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="optimize.html">4.5. Optimization and root finding (<code class="docutils literal"><span class="pre">scipy.optimize</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="optimize.html#optimization">4.5.1. Optimization</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="optimize.html#local-optimization">4.5.1.1. Local Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="optimize.html#equation-local-minimizers">4.5.1.2. Equation (Local) Minimizers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="optimize.html#global-optimization">4.5.1.3. Global Optimization</a></li>
+<li class="toctree-l4"><a class="reference internal" href="optimize.html#rosenbrock-function">4.5.1.4. Rosenbrock function</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="optimize.html#fitting">4.5.2. Fitting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.optimize.curve_fit.html">4.5.2.1. scipy.optimize.curve_fit</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="optimize.html#root-finding">4.5.3. Root finding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="optimize.html#scalar-functions">4.5.3.1. Scalar functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="optimize.html#multidimensional">4.5.3.2. Multidimensional</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="optimize.html#linear-programming">4.5.4. Linear Programming</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.optimize.linprog.html">4.5.4.1. scipy.optimize.linprog</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.optimize.linprog_verbose_callback.html">4.5.4.2. scipy.optimize.linprog_verbose_callback</a></li>
+<li class="toctree-l4"><a class="reference internal" href="optimize.linprog-simplex.html">4.5.4.3. linprog(method=&#8217;Simplex&#8217;)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.optimize.linear_sum_assignment.html">4.5.4.4. scipy.optimize.linear_sum_assignment</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="optimize.html#utilities">4.5.5. Utilities</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.optimize.approx_fprime.html">4.5.5.1. scipy.optimize.approx_fprime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.optimize.bracket.html">4.5.5.2. scipy.optimize.bracket</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.optimize.check_grad.html">4.5.5.3. scipy.optimize.check_grad</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.optimize.line_search.html">4.5.5.4. scipy.optimize.line_search</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.optimize.show_options.html">4.5.5.5. scipy.optimize.show_options</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.optimize.LbfgsInvHessProduct.html">4.5.5.6. scipy.optimize.LbfgsInvHessProduct</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="optimize.nonlin.html">4.6. Nonlinear solvers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="optimize.nonlin.html#routines">4.6.1. Routines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="optimize.nonlin.html#examples">4.6.2. Examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="api_s_to_w.html">5. API (<code class="docutils literal"><span class="pre">s-w</span></code>)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="signal.html">5.1. Signal processing (<code class="docutils literal"><span class="pre">scipy.signal</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="signal.html#convolution">5.1.1. Convolution</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.convolve.html">5.1.1.1. scipy.signal.convolve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.correlate.html">5.1.1.2. scipy.signal.correlate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.fftconvolve.html">5.1.1.3. scipy.signal.fftconvolve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.convolve2d.html">5.1.1.4. scipy.signal.convolve2d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.correlate2d.html">5.1.1.5. scipy.signal.correlate2d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.sepfir2d.html">5.1.1.6. scipy.signal.sepfir2d</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html#b-splines">5.1.2. B-splines</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.bspline.html">5.1.2.1. scipy.signal.bspline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cubic.html">5.1.2.2. scipy.signal.cubic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.quadratic.html">5.1.2.3. scipy.signal.quadratic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.gauss_spline.html">5.1.2.4. scipy.signal.gauss_spline</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cspline1d.html">5.1.2.5. scipy.signal.cspline1d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.qspline1d.html">5.1.2.6. scipy.signal.qspline1d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cspline2d.html">5.1.2.7. scipy.signal.cspline2d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.qspline2d.html">5.1.2.8. scipy.signal.qspline2d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cspline1d_eval.html">5.1.2.9. scipy.signal.cspline1d_eval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.qspline1d_eval.html">5.1.2.10. scipy.signal.qspline1d_eval</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.spline_filter.html">5.1.2.11. scipy.signal.spline_filter</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html#filtering">5.1.3. Filtering</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.order_filter.html">5.1.3.1. scipy.signal.order_filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.medfilt.html">5.1.3.2. scipy.signal.medfilt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.medfilt2d.html">5.1.3.3. scipy.signal.medfilt2d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.wiener.html">5.1.3.4. scipy.signal.wiener</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.symiirorder1.html">5.1.3.5. scipy.signal.symiirorder1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.symiirorder2.html">5.1.3.6. scipy.signal.symiirorder2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.lfilter.html">5.1.3.7. scipy.signal.lfilter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.lfiltic.html">5.1.3.8. scipy.signal.lfiltic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.lfilter_zi.html">5.1.3.9. scipy.signal.lfilter_zi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.filtfilt.html">5.1.3.10. scipy.signal.filtfilt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.savgol_filter.html">5.1.3.11. scipy.signal.savgol_filter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.deconvolve.html">5.1.3.12. scipy.signal.deconvolve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.sosfilt.html">5.1.3.13. scipy.signal.sosfilt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.sosfilt_zi.html">5.1.3.14. scipy.signal.sosfilt_zi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.hilbert.html">5.1.3.15. scipy.signal.hilbert</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.hilbert2.html">5.1.3.16. scipy.signal.hilbert2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.decimate.html">5.1.3.17. scipy.signal.decimate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.detrend.html">5.1.3.18. scipy.signal.detrend</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.resample.html">5.1.3.19. scipy.signal.resample</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html#filter-design">5.1.4. Filter design</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.bilinear.html">5.1.4.1. scipy.signal.bilinear</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.findfreqs.html">5.1.4.2. scipy.signal.findfreqs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.firwin.html">5.1.4.3. scipy.signal.firwin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.firwin2.html">5.1.4.4. scipy.signal.firwin2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.freqs.html">5.1.4.5. scipy.signal.freqs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.freqz.html">5.1.4.6. scipy.signal.freqz</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.group_delay.html">5.1.4.7. scipy.signal.group_delay</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.iirdesign.html">5.1.4.8. scipy.signal.iirdesign</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.iirfilter.html">5.1.4.9. scipy.signal.iirfilter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.kaiser_atten.html">5.1.4.10. scipy.signal.kaiser_atten</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.kaiser_beta.html">5.1.4.11. scipy.signal.kaiser_beta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.kaiserord.html">5.1.4.12. scipy.signal.kaiserord</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.savgol_coeffs.html">5.1.4.13. scipy.signal.savgol_coeffs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.remez.html">5.1.4.14. scipy.signal.remez</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.unique_roots.html">5.1.4.15. scipy.signal.unique_roots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.residue.html">5.1.4.16. scipy.signal.residue</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.residuez.html">5.1.4.17. scipy.signal.residuez</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.invres.html">5.1.4.18. scipy.signal.invres</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.invresz.html">5.1.4.19. scipy.signal.invresz</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.BadCoefficients.html">5.1.4.20. scipy.signal.BadCoefficients</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.abcd_normalize.html">5.1.4.21. scipy.signal.abcd_normalize</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.band_stop_obj.html">5.1.4.22. scipy.signal.band_stop_obj</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.besselap.html">5.1.4.23. scipy.signal.besselap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.buttap.html">5.1.4.24. scipy.signal.buttap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cheb1ap.html">5.1.4.25. scipy.signal.cheb1ap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cheb2ap.html">5.1.4.26. scipy.signal.cheb2ap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cmplx_sort.html">5.1.4.27. scipy.signal.cmplx_sort</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.ellipap.html">5.1.4.28. scipy.signal.ellipap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.lp2bp.html">5.1.4.29. scipy.signal.lp2bp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.lp2bs.html">5.1.4.30. scipy.signal.lp2bs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.lp2hp.html">5.1.4.31. scipy.signal.lp2hp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.lp2lp.html">5.1.4.32. scipy.signal.lp2lp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.normalize.html">5.1.4.33. scipy.signal.normalize</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html#matlab-style-iir-filter-design">5.1.5. Matlab-style IIR filter design</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.butter.html">5.1.5.1. scipy.signal.butter</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.buttord.html">5.1.5.2. scipy.signal.buttord</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cheby1.html">5.1.5.3. scipy.signal.cheby1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cheb1ord.html">5.1.5.4. scipy.signal.cheb1ord</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cheby2.html">5.1.5.5. scipy.signal.cheby2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cheb2ord.html">5.1.5.6. scipy.signal.cheb2ord</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.ellip.html">5.1.5.7. scipy.signal.ellip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.ellipord.html">5.1.5.8. scipy.signal.ellipord</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.bessel.html">5.1.5.9. scipy.signal.bessel</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html#continuous-time-linear-systems">5.1.6. Continuous-Time Linear Systems</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.freqresp.html">5.1.6.1. scipy.signal.freqresp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.lti.html">5.1.6.2. scipy.signal.lti</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.StateSpace.html">5.1.6.3. scipy.signal.StateSpace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.TransferFunction.html">5.1.6.4. scipy.signal.TransferFunction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.ZerosPolesGain.html">5.1.6.5. scipy.signal.ZerosPolesGain</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.lsim.html">5.1.6.6. scipy.signal.lsim</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.lsim2.html">5.1.6.7. scipy.signal.lsim2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.impulse.html">5.1.6.8. scipy.signal.impulse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.impulse2.html">5.1.6.9. scipy.signal.impulse2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.step.html">5.1.6.10. scipy.signal.step</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.step2.html">5.1.6.11. scipy.signal.step2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.bode.html">5.1.6.12. scipy.signal.bode</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html#discrete-time-linear-systems">5.1.7. Discrete-Time Linear Systems</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.dlsim.html">5.1.7.1. scipy.signal.dlsim</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.dimpulse.html">5.1.7.2. scipy.signal.dimpulse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.dstep.html">5.1.7.3. scipy.signal.dstep</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html#lti-representations">5.1.8. LTI Representations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.tf2zpk.html">5.1.8.1. scipy.signal.tf2zpk</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.tf2sos.html">5.1.8.2. scipy.signal.tf2sos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.tf2ss.html">5.1.8.3. scipy.signal.tf2ss</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.zpk2tf.html">5.1.8.4. scipy.signal.zpk2tf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.zpk2sos.html">5.1.8.5. scipy.signal.zpk2sos</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.zpk2ss.html">5.1.8.6. scipy.signal.zpk2ss</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.ss2tf.html">5.1.8.7. scipy.signal.ss2tf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.ss2zpk.html">5.1.8.8. scipy.signal.ss2zpk</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.sos2zpk.html">5.1.8.9. scipy.signal.sos2zpk</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.sos2tf.html">5.1.8.10. scipy.signal.sos2tf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cont2discrete.html">5.1.8.11. scipy.signal.cont2discrete</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.place_poles.html">5.1.8.12. scipy.signal.place_poles</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html#waveforms">5.1.9. Waveforms</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.chirp.html">5.1.9.1. scipy.signal.chirp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.gausspulse.html">5.1.9.2. scipy.signal.gausspulse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.max_len_seq.html">5.1.9.3. scipy.signal.max_len_seq</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.sawtooth.html">5.1.9.4. scipy.signal.sawtooth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.square.html">5.1.9.5. scipy.signal.square</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.sweep_poly.html">5.1.9.6. scipy.signal.sweep_poly</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html#window-functions">5.1.10. Window functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.get_window.html">5.1.10.1. scipy.signal.get_window</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.barthann.html">5.1.10.2. scipy.signal.barthann</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.bartlett.html">5.1.10.3. scipy.signal.bartlett</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.blackman.html">5.1.10.4. scipy.signal.blackman</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.blackmanharris.html">5.1.10.5. scipy.signal.blackmanharris</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.bohman.html">5.1.10.6. scipy.signal.bohman</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.boxcar.html">5.1.10.7. scipy.signal.boxcar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.chebwin.html">5.1.10.8. scipy.signal.chebwin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cosine.html">5.1.10.9. scipy.signal.cosine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.exponential.html">5.1.10.10. scipy.signal.exponential</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.flattop.html">5.1.10.11. scipy.signal.flattop</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.gaussian.html">5.1.10.12. scipy.signal.gaussian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.general_gaussian.html">5.1.10.13. scipy.signal.general_gaussian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.hamming.html">5.1.10.14. scipy.signal.hamming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.hann.html">5.1.10.15. scipy.signal.hann</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.hanning.html">5.1.10.16. scipy.signal.hanning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.kaiser.html">5.1.10.17. scipy.signal.kaiser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.nuttall.html">5.1.10.18. scipy.signal.nuttall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.parzen.html">5.1.10.19. scipy.signal.parzen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.slepian.html">5.1.10.20. scipy.signal.slepian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.triang.html">5.1.10.21. scipy.signal.triang</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.tukey.html">5.1.10.22. scipy.signal.tukey</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html#wavelets">5.1.11. Wavelets</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cascade.html">5.1.11.1. scipy.signal.cascade</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.daub.html">5.1.11.2. scipy.signal.daub</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.morlet.html">5.1.11.3. scipy.signal.morlet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.qmf.html">5.1.11.4. scipy.signal.qmf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.ricker.html">5.1.11.5. scipy.signal.ricker</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.cwt.html">5.1.11.6. scipy.signal.cwt</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html#peak-finding">5.1.12. Peak finding</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.find_peaks_cwt.html">5.1.12.1. scipy.signal.find_peaks_cwt</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.argrelmin.html">5.1.12.2. scipy.signal.argrelmin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.argrelmax.html">5.1.12.3. scipy.signal.argrelmax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.argrelextrema.html">5.1.12.4. scipy.signal.argrelextrema</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="signal.html#spectral-analysis">5.1.13. Spectral Analysis</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.periodogram.html">5.1.13.1. scipy.signal.periodogram</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.welch.html">5.1.13.2. scipy.signal.welch</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.csd.html">5.1.13.3. scipy.signal.csd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.coherence.html">5.1.13.4. scipy.signal.coherence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.spectrogram.html">5.1.13.5. scipy.signal.spectrogram</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.lombscargle.html">5.1.13.6. scipy.signal.lombscargle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.signal.vectorstrength.html">5.1.13.7. scipy.signal.vectorstrength</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sparse.html">5.2. Sparse matrices (<code class="docutils literal"><span class="pre">scipy.sparse</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sparse.html#contents">5.2.1. Contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sparse.html#sparse-matrix-classes">5.2.1.1. Sparse matrix classes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sparse.html#functions">5.2.1.2. Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sparse.html#submodules">5.2.1.3. Submodules</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sparse.html#exceptions">5.2.1.4. Exceptions</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sparse.html#usage-information">5.2.2. Usage information</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sparse.html#matrix-vector-product">5.2.2.1. Matrix vector product</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sparse.html#example-1">5.2.2.2. Example 1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sparse.html#example-2">5.2.2.3. Example 2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="sparse.html#further-details">5.2.2.4. Further Details</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sparse.linalg.html">5.3. Sparse linear algebra (<code class="docutils literal"><span class="pre">scipy.sparse.linalg</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sparse.linalg.html#abstract-linear-operators">5.3.1. Abstract linear operators</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.LinearOperator.html">5.3.1.1. scipy.sparse.linalg.LinearOperator</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.aslinearoperator.html">5.3.1.2. scipy.sparse.linalg.aslinearoperator</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sparse.linalg.html#matrix-operations">5.3.2. Matrix Operations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.inv.html">5.3.2.1. scipy.sparse.linalg.inv</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.expm.html">5.3.2.2. scipy.sparse.linalg.expm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.expm_multiply.html">5.3.2.3. scipy.sparse.linalg.expm_multiply</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sparse.linalg.html#matrix-norms">5.3.3. Matrix norms</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.norm.html">5.3.3.1. scipy.sparse.linalg.norm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.onenormest.html">5.3.3.2. scipy.sparse.linalg.onenormest</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sparse.linalg.html#solving-linear-problems">5.3.4. Solving linear problems</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.spsolve.html">5.3.4.1. scipy.sparse.linalg.spsolve</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.factorized.html">5.3.4.2. scipy.sparse.linalg.factorized</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.MatrixRankWarning.html">5.3.4.3. scipy.sparse.linalg.MatrixRankWarning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.use_solver.html">5.3.4.4. scipy.sparse.linalg.use_solver</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.bicg.html">5.3.4.5. scipy.sparse.linalg.bicg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.bicgstab.html">5.3.4.6. scipy.sparse.linalg.bicgstab</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.cg.html">5.3.4.7. scipy.sparse.linalg.cg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.cgs.html">5.3.4.8. scipy.sparse.linalg.cgs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.gmres.html">5.3.4.9. scipy.sparse.linalg.gmres</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.lgmres.html">5.3.4.10. scipy.sparse.linalg.lgmres</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.minres.html">5.3.4.11. scipy.sparse.linalg.minres</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.qmr.html">5.3.4.12. scipy.sparse.linalg.qmr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.lsqr.html">5.3.4.13. scipy.sparse.linalg.lsqr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.lsmr.html">5.3.4.14. scipy.sparse.linalg.lsmr</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sparse.linalg.html#matrix-factorizations">5.3.5. Matrix factorizations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.eigs.html">5.3.5.1. scipy.sparse.linalg.eigs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.eigsh.html">5.3.5.2. scipy.sparse.linalg.eigsh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.lobpcg.html">5.3.5.3. scipy.sparse.linalg.lobpcg</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.svds.html">5.3.5.4. scipy.sparse.linalg.svds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.splu.html">5.3.5.5. scipy.sparse.linalg.splu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.spilu.html">5.3.5.6. scipy.sparse.linalg.spilu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.SuperLU.html">5.3.5.7. scipy.sparse.linalg.SuperLU</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sparse.linalg.html#exceptions">5.3.6. Exceptions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.ArpackNoConvergence.html">5.3.6.1. scipy.sparse.linalg.ArpackNoConvergence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.linalg.ArpackError.html">5.3.6.2. scipy.sparse.linalg.ArpackError</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="sparse.csgraph.html">5.4. Compressed Sparse Graph Routines (<code class="docutils literal"><span class="pre">scipy.sparse.csgraph</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="sparse.csgraph.html#contents">5.4.1. Contents</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.connected_components.html">5.4.1.1. scipy.sparse.csgraph.connected_components</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.laplacian.html">5.4.1.2. scipy.sparse.csgraph.laplacian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.shortest_path.html">5.4.1.3. scipy.sparse.csgraph.shortest_path</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.dijkstra.html">5.4.1.4. scipy.sparse.csgraph.dijkstra</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.floyd_warshall.html">5.4.1.5. scipy.sparse.csgraph.floyd_warshall</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.bellman_ford.html">5.4.1.6. scipy.sparse.csgraph.bellman_ford</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.johnson.html">5.4.1.7. scipy.sparse.csgraph.johnson</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.breadth_first_order.html">5.4.1.8. scipy.sparse.csgraph.breadth_first_order</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.depth_first_order.html">5.4.1.9. scipy.sparse.csgraph.depth_first_order</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.breadth_first_tree.html">5.4.1.10. scipy.sparse.csgraph.breadth_first_tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.depth_first_tree.html">5.4.1.11. scipy.sparse.csgraph.depth_first_tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.minimum_spanning_tree.html">5.4.1.12. scipy.sparse.csgraph.minimum_spanning_tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.reverse_cuthill_mckee.html">5.4.1.13. scipy.sparse.csgraph.reverse_cuthill_mckee</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.maximum_bipartite_matching.html">5.4.1.14. scipy.sparse.csgraph.maximum_bipartite_matching</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.NegativeCycleError.html">5.4.1.15. scipy.sparse.csgraph.NegativeCycleError</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.construct_dist_matrix.html">5.4.1.16. scipy.sparse.csgraph.construct_dist_matrix</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.csgraph_from_dense.html">5.4.1.17. scipy.sparse.csgraph.csgraph_from_dense</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.csgraph_from_masked.html">5.4.1.18. scipy.sparse.csgraph.csgraph_from_masked</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.csgraph_masked_from_dense.html">5.4.1.19. scipy.sparse.csgraph.csgraph_masked_from_dense</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.csgraph_to_dense.html">5.4.1.20. scipy.sparse.csgraph.csgraph_to_dense</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.csgraph_to_masked.html">5.4.1.21. scipy.sparse.csgraph.csgraph_to_masked</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.sparse.csgraph.reconstruct_path.html">5.4.1.22. scipy.sparse.csgraph.reconstruct_path</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="sparse.csgraph.html#graph-representations">5.4.2. Graph Representations</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="sparse.csgraph.html#directed-vs-undirected">5.4.2.1. Directed vs. Undirected</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="spatial.html">5.5. Spatial algorithms and data structures (<code class="docutils literal"><span class="pre">scipy.spatial</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="spatial.html#nearest-neighbor-queries">5.5.1. Nearest-neighbor Queries</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.KDTree.html">5.5.1.1. scipy.spatial.KDTree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.cKDTree.html">5.5.1.2. scipy.spatial.cKDTree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.html">5.5.1.3. scipy.spatial.distance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.Rectangle.html">5.5.1.4. scipy.spatial.Rectangle</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spatial.html#delaunay-triangulation-convex-hulls-and-voronoi-diagrams">5.5.2. Delaunay Triangulation, Convex Hulls and Voronoi Diagrams</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.Delaunay.html">5.5.2.1. scipy.spatial.Delaunay</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.ConvexHull.html">5.5.2.2. scipy.spatial.ConvexHull</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.Voronoi.html">5.5.2.3. scipy.spatial.Voronoi</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spatial.html#plotting-helpers">5.5.3. Plotting Helpers</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.delaunay_plot_2d.html">5.5.3.1. scipy.spatial.delaunay_plot_2d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.convex_hull_plot_2d.html">5.5.3.2. scipy.spatial.convex_hull_plot_2d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.voronoi_plot_2d.html">5.5.3.3. scipy.spatial.voronoi_plot_2d</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="spatial.html#simplex-representation">5.5.4. Simplex representation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="spatial.html#functions">5.5.4.1. Functions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="spatial.distance.html">5.6. Distance computations (<code class="docutils literal"><span class="pre">scipy.spatial.distance</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="spatial.distance.html#function-reference">5.6.1. Function Reference</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.pdist.html">5.6.1.1. scipy.spatial.distance.pdist</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.cdist.html">5.6.1.2. scipy.spatial.distance.cdist</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.squareform.html">5.6.1.3. scipy.spatial.distance.squareform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.is_valid_dm.html">5.6.1.4. scipy.spatial.distance.is_valid_dm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.is_valid_y.html">5.6.1.5. scipy.spatial.distance.is_valid_y</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.num_obs_dm.html">5.6.1.6. scipy.spatial.distance.num_obs_dm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.num_obs_y.html">5.6.1.7. scipy.spatial.distance.num_obs_y</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.braycurtis.html">5.6.1.8. scipy.spatial.distance.braycurtis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.canberra.html">5.6.1.9. scipy.spatial.distance.canberra</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.chebyshev.html">5.6.1.10. scipy.spatial.distance.chebyshev</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.cityblock.html">5.6.1.11. scipy.spatial.distance.cityblock</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.correlation.html">5.6.1.12. scipy.spatial.distance.correlation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.cosine.html">5.6.1.13. scipy.spatial.distance.cosine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.dice.html">5.6.1.14. scipy.spatial.distance.dice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.euclidean.html">5.6.1.15. scipy.spatial.distance.euclidean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.hamming.html">5.6.1.16. scipy.spatial.distance.hamming</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.jaccard.html">5.6.1.17. scipy.spatial.distance.jaccard</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.kulsinski.html">5.6.1.18. scipy.spatial.distance.kulsinski</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.mahalanobis.html">5.6.1.19. scipy.spatial.distance.mahalanobis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.matching.html">5.6.1.20. scipy.spatial.distance.matching</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.minkowski.html">5.6.1.21. scipy.spatial.distance.minkowski</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.rogerstanimoto.html">5.6.1.22. scipy.spatial.distance.rogerstanimoto</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.russellrao.html">5.6.1.23. scipy.spatial.distance.russellrao</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.seuclidean.html">5.6.1.24. scipy.spatial.distance.seuclidean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.sokalmichener.html">5.6.1.25. scipy.spatial.distance.sokalmichener</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.sokalsneath.html">5.6.1.26. scipy.spatial.distance.sokalsneath</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.sqeuclidean.html">5.6.1.27. scipy.spatial.distance.sqeuclidean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.wminkowski.html">5.6.1.28. scipy.spatial.distance.wminkowski</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.spatial.distance.yule.html">5.6.1.29. scipy.spatial.distance.yule</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="special.html">5.7. Special functions (<code class="docutils literal"><span class="pre">scipy.special</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="special.html#error-handling">5.7.1. Error handling</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.special.errprint.html">5.7.1.1. scipy.special.errprint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.special.SpecialFunctionWarning.html">5.7.1.2. scipy.special.SpecialFunctionWarning</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="special.html#available-functions">5.7.2. Available functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="special.html#airy-functions">5.7.2.1. Airy functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#elliptic-functions-and-integrals">5.7.2.2. Elliptic Functions and Integrals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#bessel-functions">5.7.2.3. Bessel Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#struve-functions">5.7.2.4. Struve Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#raw-statistical-functions">5.7.2.5. Raw Statistical Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#information-theory-functions">5.7.2.6. Information Theory Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#gamma-and-related-functions">5.7.2.7. Gamma and Related Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#error-function-and-fresnel-integrals">5.7.2.8. Error Function and Fresnel Integrals</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#legendre-functions">5.7.2.9. Legendre Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#ellipsoidal-harmonics">5.7.2.10. Ellipsoidal Harmonics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#orthogonal-polynomials">5.7.2.11. Orthogonal polynomials</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#hypergeometric-functions">5.7.2.12. Hypergeometric Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#parabolic-cylinder-functions">5.7.2.13. Parabolic Cylinder Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#mathieu-and-related-functions">5.7.2.14. Mathieu and Related Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#spheroidal-wave-functions">5.7.2.15. Spheroidal Wave Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#kelvin-functions">5.7.2.16. Kelvin Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#combinatorics">5.7.2.17. Combinatorics</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#other-special-functions">5.7.2.18. Other Special Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="special.html#convenience-functions">5.7.2.19. Convenience Functions</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="stats.html">5.8. Statistical functions (<code class="docutils literal"><span class="pre">scipy.stats</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.rv_continuous.html">5.8.1. scipy.stats.rv_continuous</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.rv_discrete.html">5.8.2. scipy.stats.rv_discrete</a></li>
+<li class="toctree-l3"><a class="reference internal" href="stats.html#continuous-distributions">5.8.3. Continuous distributions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.alpha.html">5.8.3.1. scipy.stats.alpha</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.anglit.html">5.8.3.2. scipy.stats.anglit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.arcsine.html">5.8.3.3. scipy.stats.arcsine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.beta.html">5.8.3.4. scipy.stats.beta</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.betaprime.html">5.8.3.5. scipy.stats.betaprime</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.bradford.html">5.8.3.6. scipy.stats.bradford</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.burr.html">5.8.3.7. scipy.stats.burr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.cauchy.html">5.8.3.8. scipy.stats.cauchy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.chi.html">5.8.3.9. scipy.stats.chi</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.chi2.html">5.8.3.10. scipy.stats.chi2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.cosine.html">5.8.3.11. scipy.stats.cosine</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.dgamma.html">5.8.3.12. scipy.stats.dgamma</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.dweibull.html">5.8.3.13. scipy.stats.dweibull</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.erlang.html">5.8.3.14. scipy.stats.erlang</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.expon.html">5.8.3.15. scipy.stats.expon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.exponnorm.html">5.8.3.16. scipy.stats.exponnorm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.exponweib.html">5.8.3.17. scipy.stats.exponweib</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.exponpow.html">5.8.3.18. scipy.stats.exponpow</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.f.html">5.8.3.19. scipy.stats.f</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.fatiguelife.html">5.8.3.20. scipy.stats.fatiguelife</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.fisk.html">5.8.3.21. scipy.stats.fisk</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.foldcauchy.html">5.8.3.22. scipy.stats.foldcauchy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.foldnorm.html">5.8.3.23. scipy.stats.foldnorm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.frechet_r.html">5.8.3.24. scipy.stats.frechet_r</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.frechet_l.html">5.8.3.25. scipy.stats.frechet_l</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.genlogistic.html">5.8.3.26. scipy.stats.genlogistic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.gennorm.html">5.8.3.27. scipy.stats.gennorm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.genpareto.html">5.8.3.28. scipy.stats.genpareto</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.genexpon.html">5.8.3.29. scipy.stats.genexpon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.genextreme.html">5.8.3.30. scipy.stats.genextreme</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.gausshyper.html">5.8.3.31. scipy.stats.gausshyper</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.gamma.html">5.8.3.32. scipy.stats.gamma</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.gengamma.html">5.8.3.33. scipy.stats.gengamma</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.genhalflogistic.html">5.8.3.34. scipy.stats.genhalflogistic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.gilbrat.html">5.8.3.35. scipy.stats.gilbrat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.gompertz.html">5.8.3.36. scipy.stats.gompertz</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.gumbel_r.html">5.8.3.37. scipy.stats.gumbel_r</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.gumbel_l.html">5.8.3.38. scipy.stats.gumbel_l</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.halfcauchy.html">5.8.3.39. scipy.stats.halfcauchy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.halflogistic.html">5.8.3.40. scipy.stats.halflogistic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.halfnorm.html">5.8.3.41. scipy.stats.halfnorm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.halfgennorm.html">5.8.3.42. scipy.stats.halfgennorm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.hypsecant.html">5.8.3.43. scipy.stats.hypsecant</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.invgamma.html">5.8.3.44. scipy.stats.invgamma</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.invgauss.html">5.8.3.45. scipy.stats.invgauss</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.invweibull.html">5.8.3.46. scipy.stats.invweibull</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.johnsonsb.html">5.8.3.47. scipy.stats.johnsonsb</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.johnsonsu.html">5.8.3.48. scipy.stats.johnsonsu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.ksone.html">5.8.3.49. scipy.stats.ksone</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.kstwobign.html">5.8.3.50. scipy.stats.kstwobign</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.laplace.html">5.8.3.51. scipy.stats.laplace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.levy.html">5.8.3.52. scipy.stats.levy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.levy_l.html">5.8.3.53. scipy.stats.levy_l</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.levy_stable.html">5.8.3.54. scipy.stats.levy_stable</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.logistic.html">5.8.3.55. scipy.stats.logistic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.loggamma.html">5.8.3.56. scipy.stats.loggamma</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.loglaplace.html">5.8.3.57. scipy.stats.loglaplace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.lognorm.html">5.8.3.58. scipy.stats.lognorm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.lomax.html">5.8.3.59. scipy.stats.lomax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.maxwell.html">5.8.3.60. scipy.stats.maxwell</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.mielke.html">5.8.3.61. scipy.stats.mielke</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.nakagami.html">5.8.3.62. scipy.stats.nakagami</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.ncx2.html">5.8.3.63. scipy.stats.ncx2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.ncf.html">5.8.3.64. scipy.stats.ncf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.nct.html">5.8.3.65. scipy.stats.nct</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.norm.html">5.8.3.66. scipy.stats.norm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.pareto.html">5.8.3.67. scipy.stats.pareto</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.pearson3.html">5.8.3.68. scipy.stats.pearson3</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.powerlaw.html">5.8.3.69. scipy.stats.powerlaw</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.powerlognorm.html">5.8.3.70. scipy.stats.powerlognorm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.powernorm.html">5.8.3.71. scipy.stats.powernorm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.rdist.html">5.8.3.72. scipy.stats.rdist</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.reciprocal.html">5.8.3.73. scipy.stats.reciprocal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.rayleigh.html">5.8.3.74. scipy.stats.rayleigh</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.rice.html">5.8.3.75. scipy.stats.rice</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.recipinvgauss.html">5.8.3.76. scipy.stats.recipinvgauss</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.semicircular.html">5.8.3.77. scipy.stats.semicircular</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.t.html">5.8.3.78. scipy.stats.t</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.triang.html">5.8.3.79. scipy.stats.triang</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.truncexpon.html">5.8.3.80. scipy.stats.truncexpon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.truncnorm.html">5.8.3.81. scipy.stats.truncnorm</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.tukeylambda.html">5.8.3.82. scipy.stats.tukeylambda</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.uniform.html">5.8.3.83. scipy.stats.uniform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.vonmises.html">5.8.3.84. scipy.stats.vonmises</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.vonmises_line.html">5.8.3.85. scipy.stats.vonmises_line</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.wald.html">5.8.3.86. scipy.stats.wald</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.weibull_min.html">5.8.3.87. scipy.stats.weibull_min</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.weibull_max.html">5.8.3.88. scipy.stats.weibull_max</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.wrapcauchy.html">5.8.3.89. scipy.stats.wrapcauchy</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stats.html#multivariate-distributions">5.8.4. Multivariate distributions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.multivariate_normal.html">5.8.4.1. scipy.stats.multivariate_normal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.matrix_normal.html">5.8.4.2. scipy.stats.matrix_normal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.dirichlet.html">5.8.4.3. scipy.stats.dirichlet</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.wishart.html">5.8.4.4. scipy.stats.wishart</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.invwishart.html">5.8.4.5. scipy.stats.invwishart</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stats.html#discrete-distributions">5.8.5. Discrete distributions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.bernoulli.html">5.8.5.1. scipy.stats.bernoulli</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.binom.html">5.8.5.2. scipy.stats.binom</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.boltzmann.html">5.8.5.3. scipy.stats.boltzmann</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.dlaplace.html">5.8.5.4. scipy.stats.dlaplace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.geom.html">5.8.5.5. scipy.stats.geom</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.hypergeom.html">5.8.5.6. scipy.stats.hypergeom</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.logser.html">5.8.5.7. scipy.stats.logser</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.nbinom.html">5.8.5.8. scipy.stats.nbinom</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.planck.html">5.8.5.9. scipy.stats.planck</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.poisson.html">5.8.5.10. scipy.stats.poisson</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.randint.html">5.8.5.11. scipy.stats.randint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.skellam.html">5.8.5.12. scipy.stats.skellam</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.zipf.html">5.8.5.13. scipy.stats.zipf</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stats.html#statistical-functions">5.8.6. Statistical functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.describe.html">5.8.6.1. scipy.stats.describe</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.gmean.html">5.8.6.2. scipy.stats.gmean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.hmean.html">5.8.6.3. scipy.stats.hmean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.kurtosis.html">5.8.6.4. scipy.stats.kurtosis</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.kurtosistest.html">5.8.6.5. scipy.stats.kurtosistest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.mode.html">5.8.6.6. scipy.stats.mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.moment.html">5.8.6.7. scipy.stats.moment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.normaltest.html">5.8.6.8. scipy.stats.normaltest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.skew.html">5.8.6.9. scipy.stats.skew</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.skewtest.html">5.8.6.10. scipy.stats.skewtest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.kstat.html">5.8.6.11. scipy.stats.kstat</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.kstatvar.html">5.8.6.12. scipy.stats.kstatvar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.tmean.html">5.8.6.13. scipy.stats.tmean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.tvar.html">5.8.6.14. scipy.stats.tvar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.tmin.html">5.8.6.15. scipy.stats.tmin</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.tmax.html">5.8.6.16. scipy.stats.tmax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.tstd.html">5.8.6.17. scipy.stats.tstd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.tsem.html">5.8.6.18. scipy.stats.tsem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.nanmean.html">5.8.6.19. scipy.stats.nanmean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.nanstd.html">5.8.6.20. scipy.stats.nanstd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.nanmedian.html">5.8.6.21. scipy.stats.nanmedian</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.variation.html">5.8.6.22. scipy.stats.variation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.find_repeats.html">5.8.6.23. scipy.stats.find_repeats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.trim_mean.html">5.8.6.24. scipy.stats.trim_mean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.cumfreq.html">5.8.6.25. scipy.stats.cumfreq</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.histogram2.html">5.8.6.26. scipy.stats.histogram2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.histogram.html">5.8.6.27. scipy.stats.histogram</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.itemfreq.html">5.8.6.28. scipy.stats.itemfreq</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.percentileofscore.html">5.8.6.29. scipy.stats.percentileofscore</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.scoreatpercentile.html">5.8.6.30. scipy.stats.scoreatpercentile</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.relfreq.html">5.8.6.31. scipy.stats.relfreq</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.binned_statistic.html">5.8.6.32. scipy.stats.binned_statistic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.binned_statistic_2d.html">5.8.6.33. scipy.stats.binned_statistic_2d</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.binned_statistic_dd.html">5.8.6.34. scipy.stats.binned_statistic_dd</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.obrientransform.html">5.8.6.35. scipy.stats.obrientransform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.signaltonoise.html">5.8.6.36. scipy.stats.signaltonoise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.bayes_mvs.html">5.8.6.37. scipy.stats.bayes_mvs</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.mvsdist.html">5.8.6.38. scipy.stats.mvsdist</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.sem.html">5.8.6.39. scipy.stats.sem</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.zmap.html">5.8.6.40. scipy.stats.zmap</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.zscore.html">5.8.6.41. scipy.stats.zscore</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.sigmaclip.html">5.8.6.42. scipy.stats.sigmaclip</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.threshold.html">5.8.6.43. scipy.stats.threshold</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.trimboth.html">5.8.6.44. scipy.stats.trimboth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.trim1.html">5.8.6.45. scipy.stats.trim1</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.f_oneway.html">5.8.6.46. scipy.stats.f_oneway</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.pearsonr.html">5.8.6.47. scipy.stats.pearsonr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.spearmanr.html">5.8.6.48. scipy.stats.spearmanr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.pointbiserialr.html">5.8.6.49. scipy.stats.pointbiserialr</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.kendalltau.html">5.8.6.50. scipy.stats.kendalltau</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.linregress.html">5.8.6.51. scipy.stats.linregress</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.theilslopes.html">5.8.6.52. scipy.stats.theilslopes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.f_value.html">5.8.6.53. scipy.stats.f_value</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.ttest_1samp.html">5.8.6.54. scipy.stats.ttest_1samp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.ttest_ind.html">5.8.6.55. scipy.stats.ttest_ind</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.ttest_ind_from_stats.html">5.8.6.56. scipy.stats.ttest_ind_from_stats</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.ttest_rel.html">5.8.6.57. scipy.stats.ttest_rel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.kstest.html">5.8.6.58. scipy.stats.kstest</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.chisquare.html">5.8.6.59. scipy.stats.chisquare</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.power_divergence.html">5.8.6.60. scipy.stats.power_divergence</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.ks_2samp.html">5.8.6.61. scipy.stats.ks_2samp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.mannwhitneyu.html">5.8.6.62. scipy.stats.mannwhitneyu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.tiecorrect.html">5.8.6.63. scipy.stats.tiecorrect</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.rankdata.html">5.8.6.64. scipy.stats.rankdata</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.ranksums.html">5.8.6.65. scipy.stats.ranksums</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.wilcoxon.html">5.8.6.66. scipy.stats.wilcoxon</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.kruskal.html">5.8.6.67. scipy.stats.kruskal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.friedmanchisquare.html">5.8.6.68. scipy.stats.friedmanchisquare</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.combine_pvalues.html">5.8.6.69. scipy.stats.combine_pvalues</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.ss.html">5.8.6.70. scipy.stats.ss</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.square_of_sums.html">5.8.6.71. scipy.stats.square_of_sums</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.jarque_bera.html">5.8.6.72. scipy.stats.jarque_bera</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.ansari.html">5.8.6.73. scipy.stats.ansari</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.bartlett.html">5.8.6.74. scipy.stats.bartlett</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.levene.html">5.8.6.75. scipy.stats.levene</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.shapiro.html">5.8.6.76. scipy.stats.shapiro</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.anderson.html">5.8.6.77. scipy.stats.anderson</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.anderson_ksamp.html">5.8.6.78. scipy.stats.anderson_ksamp</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.binom_test.html">5.8.6.79. scipy.stats.binom_test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.fligner.html">5.8.6.80. scipy.stats.fligner</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.median_test.html">5.8.6.81. scipy.stats.median_test</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.mood.html">5.8.6.82. scipy.stats.mood</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.boxcox.html">5.8.6.83. scipy.stats.boxcox</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.boxcox_normmax.html">5.8.6.84. scipy.stats.boxcox_normmax</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.boxcox_llf.html">5.8.6.85. scipy.stats.boxcox_llf</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.entropy.html">5.8.6.86. scipy.stats.entropy</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.chisqprob.html">5.8.6.87. scipy.stats.chisqprob</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.betai.html">5.8.6.88. scipy.stats.betai</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stats.html#circular-statistical-functions">5.8.7. Circular statistical functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.circmean.html">5.8.7.1. scipy.stats.circmean</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.circvar.html">5.8.7.2. scipy.stats.circvar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.circstd.html">5.8.7.3. scipy.stats.circstd</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stats.html#contingency-table-functions">5.8.8. Contingency table functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.chi2_contingency.html">5.8.8.1. scipy.stats.chi2_contingency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.contingency.expected_freq.html">5.8.8.2. scipy.stats.contingency.expected_freq</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.contingency.margins.html">5.8.8.3. scipy.stats.contingency.margins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.fisher_exact.html">5.8.8.4. scipy.stats.fisher_exact</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stats.html#plot-tests">5.8.9. Plot-tests</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.ppcc_max.html">5.8.9.1. scipy.stats.ppcc_max</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.ppcc_plot.html">5.8.9.2. scipy.stats.ppcc_plot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.probplot.html">5.8.9.3. scipy.stats.probplot</a></li>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.boxcox_normplot.html">5.8.9.4. scipy.stats.boxcox_normplot</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stats.html#masked-statistics-functions">5.8.10. Masked statistics functions</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="stats.mstats.html">5.8.10.1. Statistical functions for masked arrays (<code class="docutils literal"><span class="pre">scipy.stats.mstats</span></code>)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="stats.html#univariate-and-multivariate-kernel-density-estimation-scipy-stats-kde">5.8.11. Univariate and multivariate kernel density estimation (<code class="docutils literal"><span class="pre">scipy.stats.kde</span></code>)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="generated/scipy.stats.gaussian_kde.html">5.8.11.1. scipy.stats.gaussian_kde</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="stats.mstats.html">5.8.10.1. Statistical functions for masked arrays (<code class="docutils literal"><span class="pre">scipy.stats.mstats</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.argstoarray.html">5.8.10.1.1. scipy.stats.mstats.argstoarray</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.betai.html">5.8.10.1.2. scipy.stats.mstats.betai</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.chisquare.html">5.8.10.1.3. scipy.stats.mstats.chisquare</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.count_tied_groups.html">5.8.10.1.4. scipy.stats.mstats.count_tied_groups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.describe.html">5.8.10.1.5. scipy.stats.mstats.describe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.f_oneway.html">5.8.10.1.6. scipy.stats.mstats.f_oneway</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.f_value_wilks_lambda.html">5.8.10.1.7. scipy.stats.mstats.f_value_wilks_lambda</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.find_repeats.html">5.8.10.1.8. scipy.stats.mstats.find_repeats</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.friedmanchisquare.html">5.8.10.1.9. scipy.stats.mstats.friedmanchisquare</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.kendalltau.html">5.8.10.1.10. scipy.stats.mstats.kendalltau</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.kendalltau_seasonal.html">5.8.10.1.11. scipy.stats.mstats.kendalltau_seasonal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.kruskalwallis.html">5.8.10.1.12. scipy.stats.mstats.kruskalwallis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.ks_twosamp.html">5.8.10.1.13. scipy.stats.mstats.ks_twosamp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.kurtosis.html">5.8.10.1.14. scipy.stats.mstats.kurtosis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.kurtosistest.html">5.8.10.1.15. scipy.stats.mstats.kurtosistest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.linregress.html">5.8.10.1.16. scipy.stats.mstats.linregress</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.mannwhitneyu.html">5.8.10.1.17. scipy.stats.mstats.mannwhitneyu</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.plotting_positions.html">5.8.10.1.18. scipy.stats.mstats.plotting_positions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.mode.html">5.8.10.1.19. scipy.stats.mstats.mode</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.moment.html">5.8.10.1.20. scipy.stats.mstats.moment</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.mquantiles.html">5.8.10.1.21. scipy.stats.mstats.mquantiles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.msign.html">5.8.10.1.22. scipy.stats.mstats.msign</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.normaltest.html">5.8.10.1.23. scipy.stats.mstats.normaltest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.obrientransform.html">5.8.10.1.24. scipy.stats.mstats.obrientransform</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.pearsonr.html">5.8.10.1.25. scipy.stats.mstats.pearsonr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.plotting_positions.html">5.8.10.1.18. scipy.stats.mstats.plotting_positions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.pointbiserialr.html">5.8.10.1.26. scipy.stats.mstats.pointbiserialr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.rankdata.html">5.8.10.1.27. scipy.stats.mstats.rankdata</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.scoreatpercentile.html">5.8.10.1.28. scipy.stats.mstats.scoreatpercentile</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.sem.html">5.8.10.1.29. scipy.stats.mstats.sem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.signaltonoise.html">5.8.10.1.30. scipy.stats.mstats.signaltonoise</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.skew.html">5.8.10.1.31. scipy.stats.mstats.skew</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.skewtest.html">5.8.10.1.32. scipy.stats.mstats.skewtest</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.spearmanr.html">5.8.10.1.33. scipy.stats.mstats.spearmanr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.theilslopes.html">5.8.10.1.34. scipy.stats.mstats.theilslopes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.threshold.html">5.8.10.1.35. scipy.stats.mstats.threshold</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.tmax.html">5.8.10.1.36. scipy.stats.mstats.tmax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.tmean.html">5.8.10.1.37. scipy.stats.mstats.tmean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.tmin.html">5.8.10.1.38. scipy.stats.mstats.tmin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.trim.html">5.8.10.1.39. scipy.stats.mstats.trim</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.trima.html">5.8.10.1.40. scipy.stats.mstats.trima</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.trimboth.html">5.8.10.1.41. scipy.stats.mstats.trimboth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.trimmed_stde.html">5.8.10.1.42. scipy.stats.mstats.trimmed_stde</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.trimr.html">5.8.10.1.43. scipy.stats.mstats.trimr</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.trimtail.html">5.8.10.1.44. scipy.stats.mstats.trimtail</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.tsem.html">5.8.10.1.45. scipy.stats.mstats.tsem</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.ttest_onesamp.html">5.8.10.1.46. scipy.stats.mstats.ttest_onesamp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.ttest_ind.html">5.8.10.1.47. scipy.stats.mstats.ttest_ind</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.ttest_onesamp.html">5.8.10.1.46. scipy.stats.mstats.ttest_onesamp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.ttest_rel.html">5.8.10.1.48. scipy.stats.mstats.ttest_rel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.tvar.html">5.8.10.1.49. scipy.stats.mstats.tvar</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.variation.html">5.8.10.1.50. scipy.stats.mstats.variation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.winsorize.html">5.8.10.1.51. scipy.stats.mstats.winsorize</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.zmap.html">5.8.10.1.52. scipy.stats.mstats.zmap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.zscore.html">5.8.10.1.53. scipy.stats.mstats.zscore</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.compare_medians_ms.html">5.8.10.1.54. scipy.stats.mstats.compare_medians_ms</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.gmean.html">5.8.10.1.55. scipy.stats.mstats.gmean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.hdmedian.html">5.8.10.1.56. scipy.stats.mstats.hdmedian</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.hdquantiles.html">5.8.10.1.57. scipy.stats.mstats.hdquantiles</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.hdquantiles_sd.html">5.8.10.1.58. scipy.stats.mstats.hdquantiles_sd</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.hmean.html">5.8.10.1.59. scipy.stats.mstats.hmean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.idealfourths.html">5.8.10.1.60. scipy.stats.mstats.idealfourths</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.kruskal.html">5.8.10.1.61. scipy.stats.mstats.kruskal</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.ks_2samp.html">5.8.10.1.62. scipy.stats.mstats.ks_2samp</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.median_cihs.html">5.8.10.1.63. scipy.stats.mstats.median_cihs</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.meppf.html">5.8.10.1.64. scipy.stats.mstats.meppf</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.mjci.html">5.8.10.1.65. scipy.stats.mstats.mjci</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.mquantiles_cimj.html">5.8.10.1.66. scipy.stats.mstats.mquantiles_cimj</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.rsh.html">5.8.10.1.67. scipy.stats.mstats.rsh</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.sen_seasonal_slopes.html">5.8.10.1.68. scipy.stats.mstats.sen_seasonal_slopes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.trimmed_mean.html">5.8.10.1.69. scipy.stats.mstats.trimmed_mean</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.trimmed_mean_ci.html">5.8.10.1.70. scipy.stats.mstats.trimmed_mean_ci</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.trimmed_std.html">5.8.10.1.71. scipy.stats.mstats.trimmed_std</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.trimmed_var.html">5.8.10.1.72. scipy.stats.mstats.trimmed_var</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.stats.mstats.ttest_1samp.html">5.8.10.1.73. scipy.stats.mstats.ttest_1samp</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="weave.html">5.9. C/C++ integration (<code class="docutils literal"><span class="pre">scipy.weave</span></code>)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="weave.html#c-c-integration">5.9.1. C/C++ integration</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.weave.inline.html">5.9.2. scipy.weave.inline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.weave.blitz.html">5.9.3. scipy.weave.blitz</a></li>
+<li class="toctree-l3"><a class="reference internal" href="generated/scipy.weave.ext_tools.html">5.9.4. scipy.weave.ext_tools</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Scipy API</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>3. API (<code class="docutils literal"><span class="pre">c-i</span></code>)</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/api_c_to_i.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="api-c-i">
+<h1>3. API (<code class="docutils literal"><span class="pre">c-i</span></code>)<a class="headerlink" href="#api-c-i" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound" id="c-to-i">
+<p class="caption"><span class="caption-text">Contents</span><a class="headerlink" href="#c-to-i" title="Permalink to this toctree">¶</a></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="cluster.html">3.1. <code class="docutils literal"><span class="pre">scipy.cluster</span></code></a></li>
+<li class="toctree-l1"><a class="reference internal" href="constants.html">3.2. Constants (<code class="docutils literal"><span class="pre">scipy.constants</span></code>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="fftpack.html">3.3. Discrete Fourier transforms (<code class="docutils literal"><span class="pre">scipy.fftpack</span></code>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="integrate.html">3.4. Integration and ODEs (<code class="docutils literal"><span class="pre">scipy.integrate</span></code>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="interpolate.html">3.5. Interpolation (<code class="docutils literal"><span class="pre">scipy.interpolate</span></code>)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="io.html">3.6. Input and output (<code class="docutils literal"><span class="pre">scipy.io</span></code>)</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="cluster.html" class="btn btn-neutral float-right" title="3.1. scipy.cluster" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="API.html" class="btn btn-neutral" title="2. API - importing from Scipy" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="_static/copybutton.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
