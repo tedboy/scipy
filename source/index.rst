@@ -15,23 +15,10 @@ Scipy API
 
    tutorial/index.rst
    API.rst
-   cluster
-   constants
-   fftpack
-   integrate
-   interpolate
-   io
-   linalg
-   misc
-   ndimage
-   odr
-   optimize
-   signal
-   sparse
-   sparse.linalg
-   sparse.csgraph
-   spatial
-   special
-   stats
-   stats.mstats
-   weave
+   api_c_to_i
+   api_l_to_o
+   api_s_to_w
+
+   
+   
+   
